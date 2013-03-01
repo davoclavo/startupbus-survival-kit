@@ -75,3 +75,12 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+#####
+# VIM
+
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
