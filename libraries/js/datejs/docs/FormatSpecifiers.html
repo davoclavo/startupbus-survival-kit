@@ -1,0 +1,1660 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/datejs/wiki/FormatSpecifiers" />
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"domainName":null,"relativeBaseUrl":"","profileUrl":null,"assetVersionPath":"https://ssl.gstatic.com/codesite/ph/9019872673698702027","token":null,"assetHostPath":"https://ssl.gstatic.com/codesite/ph","projectHomeUrl":"/p/datejs","projectName":"datejs","loggedInUserEmail":null};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-2699273-4'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>FormatSpecifiers - 
+ datejs -
+ 
+ Format Specifiers are used to specify date formats for display and input. - 
+ A JavaScript Date Library - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/9019872673698702027/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/9019872673698702027/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/datejs/svnchanges/basic?path=/wiki/FormatSpecifiers.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/9019872673698702027/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">.menuIcon.off { background: no-repeat url("https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif") 0 -42px }
+ .menuIcon.on { background: no-repeat url("https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif") 0 -28px }
+ .menuIcon.down { background: no-repeat url("https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif") 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="FormatSpecifiers.html#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code38ltmpl=phosting38continue=https://code.google.com/p/datejs/wiki/FormatSpecifiers38followup=https://code.google.com/p/datejs/wiki/FormatSpecifiers" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="../index.html">
+ <a href="../index.html">
+ 
+ 
+ <img src="../logo-cct=1330372383.png"
+ alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="../index.html"><span itemprop="name">datejs</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="../index.html"><span itemprop="description">A JavaScript Date Library</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="../index.html" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="../downloads/list.html" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="../w/list.html" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="../issues/list.html"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="../source/checkout.html"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/datejs/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">FormatSpecifiers</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Format Specifiers are used to specify date formats for display and input.</i>
+ 
+ 
+ <br/>
+ 
+ <a class="label" style="padding-top: 2px"
+ href="../w/list-q=label_Featured.html"
+ title="Listed on project home page"
+ >Featured</a>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Thu Feb  4 12:03:52 2010">
+ Feb 4, 2010</span>
+ 
+ by 
+
+ <a class="userlink"
+ href="../../../u/113931677457386632890/index.html">geoff%co...@gtempaccount.com</a
+>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="toString_(available_in_core.js_)"></a>toString (available in <tt>core.js</tt>)<a href="FormatSpecifiers.html#toString_(available_in_core.js_)" class="section_anchor"></a></h1><hr/><h2><a name=".toString(_String_format_)_:_String"></a><img src="http://www.datejs.com/images/function.gif" /> .toString( <tt>String</tt> format ) : <tt>String</tt><a href="FormatSpecifiers.html#.toString(_String_format_)_:_String" class="section_anchor"></a></h2><blockquote>The .toString() function is available in <tt>core.js</tt> or any compiled <tt>/build/</tt> file. 
+</blockquote><blockquote><h4><a name="Parameters"></a>Parameters<a href="FormatSpecifiers.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>String</tt>}   A format string consisting of one or more format spcifiers. <strong>optional</strong>. </li></ul><p>  <blockquote></p><h4><a name="Return_Type"></a>Return Type<a href="FormatSpecifiers.html#Return_Type" class="section_anchor"></a></h4>
+</blockquote><p>  <blockquote>{<tt>String</tt>}  A string representation of the current Date object. 
+</blockquote>  <blockquote>The following Custom and Standard format specifier strings/characters are used with the <tt>.toString(format)</tt> function. 
+</blockquote></p><blockquote><h4><a name="CUSTOM_DATE_AND_TIME_FORMAT_SPECIFIERS"></a>CUSTOM DATE AND TIME FORMAT SPECIFIERS<a href="FormatSpecifiers.html#CUSTOM_DATE_AND_TIME_FORMAT_SPECIFIERS" class="section_anchor"></a></h4>
+<pre class="prettyprint">Format  Description                                                                  Example
+------  ---------------------------------------------------------------------------  -----------------------
+ s      The seconds of the minute between 0-59.                                      &quot;0&quot; to &quot;59&quot;
+ ss     The seconds of the minute with leading zero if required.                     &quot;00&quot; to &quot;59&quot;
+ 
+ m      The minute of the hour between 0-59.                                         &quot;0&quot;  or &quot;59&quot;
+ mm     The minute of the hour with leading zero if required.                        &quot;00&quot; or &quot;59&quot;
+ 
+ h      The hour of the day between 1-12.                                            &quot;1&quot;  to &quot;12&quot;
+ hh     The hour of the day with leading zero if required.                           &quot;01&quot; to &quot;12&quot;
+ 
+ H      The hour of the day between 0-23.                                            &quot;0&quot;  to &quot;23&quot;
+ HH     The hour of the day with leading zero if required.                           &quot;00&quot; to &quot;23&quot;
+ 
+ d      The day of the month between 1 and 31.                                       &quot;1&quot;  to &quot;31&quot;
+ dd     The day of the month with leading zero if required.                          &quot;01&quot; to &quot;31&quot;
+ ddd    Abbreviated day name. Date.CultureInfo.abbreviatedDayNames.                  &quot;Mon&quot; to &quot;Sun&quot; 
+ dddd   The full day name. Date.CultureInfo.dayNames.                                &quot;Monday&quot; to &quot;Sunday&quot;
+ 
+ M      The month of the year between 1-12.                                          &quot;1&quot; to &quot;12&quot;
+ MM     The month of the year with leading zero if required.                         &quot;01&quot; to &quot;12&quot;
+ MMM    Abbreviated month name. Date.CultureInfo.abbreviatedMonthNames.              &quot;Jan&quot; to &quot;Dec&quot;
+ MMMM   The full month name. Date.CultureInfo.monthNames.                            &quot;January&quot; to &quot;December&quot;
+
+ yy     The year as a two-digit number.                                              &quot;99&quot; or &quot;08&quot;
+ yyyy   The full four digit year.                                                    &quot;1999&quot; or &quot;2008&quot;
+ 
+ t      Displays the first character of the A.M./P.M. designator.                    &quot;A&quot; or &quot;P&quot;
+        $C.amDesignator or Date.CultureInfo.pmDesignator
+ tt     Displays the A.M./P.M. designator.                                           &quot;AM&quot; or &quot;PM&quot;
+        $C.amDesignator or Date.CultureInfo.pmDesignator
+ 
+ S      The ordinal suffix (&quot;st, &quot;nd&quot;, &quot;rd&quot; or &quot;th&quot;) of the current day.            &quot;st, &quot;nd&quot;, &quot;rd&quot; or &quot;th&quot;</pre></blockquote><p>. <blockquote></p><h4><a name="STANDARD_DATE_AND_TIME_FORMAT_SPECIFIERS"></a>STANDARD DATE AND TIME FORMAT SPECIFIERS<a href="FormatSpecifiers.html#STANDARD_DATE_AND_TIME_FORMAT_SPECIFIERS" class="section_anchor"></a></h4>
+</blockquote><blockquote>A Standard format specifier for <tt>.toString(format)</tt> consists of a single character. If multiple characters are supplied, the string is treated as a Custom format specifier.  
+</blockquote><pre class="prettyprint">Format  Description                                                                  Example (&quot;en-US&quot;)
+------  ---------------------------------------------------------------------------  -----------------------
+ d      The CultureInfo shortDate Format Pattern                                     &quot;M/d/yyyy&quot;
+ D      The CultureInfo longDate Format Pattern                                      &quot;dddd, MMMM dd, yyyy&quot;
+ F      The CultureInfo fullDateTime Format Pattern                                  &quot;dddd, MMMM dd, yyyy h:mm:ss tt&quot;
+ m      The CultureInfo monthDay Format Pattern                                      &quot;MMMM dd&quot;
+ r      The CultureInfo rfc1123 Format Pattern                                       &quot;ddd, dd MMM yyyy HH:mm:ss GMT&quot;
+ s      The CultureInfo sortableDateTime Format Pattern                              &quot;yyyy-MM-ddTHH:mm:ss&quot;
+ t      The CultureInfo shortTime Format Pattern                                     &quot;h:mm tt&quot;
+ T      The CultureInfo longTime Format Pattern                                      &quot;h:mm:ss tt&quot;
+ u      The CultureInfo universalSortableDateTime Format Pattern                     &quot;yyyy-MM-dd HH:mm:ssZ&quot;
+ y      The CultureInfo yearMonth Format Pattern                                     &quot;MMMM, yyyy&quot;</pre><p>  . . </p><h1><a name="format_(available_in_extras.js_)"></a>format (available in <tt>extras.js</tt>)<a href="FormatSpecifiers.html#format_(available_in_extras.js_)" class="section_anchor"></a></h1><hr/><h2><a name=".format(_String_format_)_:_String"></a><img src="http://www.datejs.com/images/function.gif" /> .format( <tt>String</tt> format ) : <tt>String</tt><a href="FormatSpecifiers.html#.format(_String_format_)_:_String" class="section_anchor"></a></h2><blockquote>The .format() function is available in the optional <tt>extras.js</tt> module. The <tt>extras.js</tt> module is NOT included with the <tt>/build/</tt> file and must be added separately to your page.  
+</blockquote><blockquote>The <tt>core.js</tt> (or any <tt>/build/</tt> file) is required and must be included before for <tt>extras.js</tt>. 
+</blockquote><pre class="prettyprint">&lt;script type=&quot;text/javascript&quot; src=&quot;extras.js&quot;&gt;&lt;/script&gt;</pre><blockquote><h4><a name="Parameters"></a>Parameters<a href="FormatSpecifiers.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>String</tt>}   A format string consisting of one or more format spcifiers. <strong>optional</strong> </li></ul><p>  <blockquote></p><h4><a name="Return_Type"></a>Return Type<a href="FormatSpecifiers.html#Return_Type" class="section_anchor"></a></h4>
+</blockquote><p>  <blockquote>{<tt>String</tt>}  A string representation of the current Date object. 
+</blockquote></p><blockquote>The following format specifiers are used with the <tt>.format(format)</tt> or <tt>.$format(format)</tt> function available by including the <tt>extras.js</tt> module.  
+</blockquote><blockquote>The following descriptions are from <a href="http://www.php.net/strftime" rel="nofollow">http://www.php.net/strftime</a> and <a href="http://www.php.net/manual/en/function.date.php" rel="nofollow">http://www.php.net/manual/en/function.date.php</a>. Copyright © 2001-2008 The PHP Group 
+</blockquote><blockquote><h4><a name="PHP/UNIX_FORMAT_SPECIFIERS"></a>PHP/UNIX FORMAT SPECIFIERS<a href="FormatSpecifiers.html#PHP/UNIX_FORMAT_SPECIFIERS" class="section_anchor"></a></h4>
+<pre class="prettyprint">Format  Description                                                                  Example
+------  ---------------------------------------------------------------------------  -----------------------
+ %a     abbreviated weekday name according to the current localed                    &quot;Mon&quot; through &quot;Sun&quot;
+ %A     full weekday name according to the current locale                            &quot;Sunday&quot; through &quot;Saturday&quot;
+ %b     abbreviated month name according to the current locale                       &quot;Jan&quot; through &quot;Dec&quot;
+ %B     full month name according to the current locale                              &quot;January&quot; through &quot;December&quot;
+ %c     preferred date and time representation for the current locale                &quot;4/13/2008 12:33 PM&quot;
+ %C     century number (the year divided by 100 and truncated to an integer)         &quot;00&quot; to &quot;99&quot;
+ %d     day of the month as a decimal number                                         &quot;01&quot; to &quot;31&quot;
+ %D     same as %m/%d/%y                                                             &quot;04/13/08&quot;
+ %e     day of the month as a decimal number, a single digit is preceded by a space  &quot;1&quot; to &quot;31&quot;
+ %g     like %G, but without the century                                             &quot;08&quot;
+ %G     The 4-digit year corresponding to the ISO week number (see %V).              &quot;2008&quot;
+        This has the same format and value as %Y, except that if the ISO week number 
+        belongs to the previous or next year, that year is used instead.
+ %h     same as %b                                                                   &quot;Jan&quot; through &quot;Dec&quot;
+ %H     hour as a decimal number using a 24-hour clock                               &quot;00&quot; to &quot;23&quot;
+ %I     hour as a decimal number using a 12-hour clock                               &quot;01&quot; to &quot;12&quot;
+ %j     day of the year as a decimal number                                          &quot;001&quot; to &quot;366&quot;
+ %m     month as a decimal number                                                    &quot;01&quot; to &quot;12&quot;
+ %M     minute as a decimal number                                                   &quot;00&quot; to &quot;59&quot;
+ %n     newline character                                                            &quot;\n&quot;
+ %p     either &quot;am&quot; or &quot;pm&quot; according to the given time value, or the                &quot;am&quot; or &quot;pm&quot;
+        corresponding strings for the current locale
+ %r     time in a.m. and p.m. notation                                               &quot;8:44 PM&quot;
+ %R     time in 24 hour notation                                                     &quot;20:44&quot;
+ %S     second as a decimal number                                                   &quot;00&quot; to &quot;59&quot;
+ %t     tab character                                                                &quot;\t&quot;
+ %T     current time, equal to %H:%M:%S                                              &quot;12:49:11&quot;
+ %u     weekday as a decimal number [&quot;1&quot;, &quot;7&quot;], with &quot;1&quot; representing Monday         &quot;1&quot; to &quot;7&quot;
+ %U     week number of the current year as a decimal number, starting with the       &quot;0&quot; to (&quot;52&quot; or &quot;53&quot;)
+        first Sunday as the first day of the first week
+ %V     The ISO 8601:1988 week number of the current year as a decimal number,       &quot;00&quot; to (&quot;52&quot; or &quot;53&quot;)
+        range 01 to 53, where week 1 is the first week that has at least 4 days 
+        in the current year, and with Monday as the first day of the week. 
+        (Use %G or %g for the year component that corresponds to the week number 
+        for the specified timestamp.)
+ %W     week number of the current year as a decimal number, starting with the       &quot;00&quot; to (&quot;52&quot; or &quot;53&quot;)
+        first Monday as the first day of the first week
+ %w     day of the week as a decimal, Sunday being &quot;0&quot;                               &quot;0&quot; to &quot;6&quot;
+ %x     preferred date representation for the current locale without the time        &quot;4/13/2008&quot;
+ %X     preferred time representation for the current locale without the date        &quot;12:53:05&quot;
+ %y     year as a decimal number without a century                                   &quot;00&quot; &quot;99&quot;
+ %Y     year as a decimal number including the century                               &quot;2008&quot;
+ %Z     time zone or name or abbreviation                                            &quot;UTC&quot;, &quot;EST&quot;, &quot;PST&quot;
+ %z     same as %Z 
+ %%     a literal &quot;%&quot; character                                                      &quot;%&quot;
+  
+ d      Day of the month, 2 digits with leading zeros                                &quot;01&quot; to &quot;31&quot;
+ D      A textual representation of a day, three letters                             &quot;Mon&quot; through &quot;Sun&quot;
+ j      Day of the month without leading zeros                                       &quot;1&quot; to &quot;31&quot;
+ l      A full textual representation of the day of the week (lowercase &quot;L&quot;)         &quot;Sunday&quot; through &quot;Saturday&quot;
+ N      ISO-8601 numeric representation of the day of the week (added in PHP 5.1.0)  &quot;1&quot; (for Monday) through &quot;7&quot; (for Sunday)
+ S      English ordinal suffix for the day of the month, 2 characters                &quot;st&quot;, &quot;nd&quot;, &quot;rd&quot; or &quot;th&quot;. Works well with j
+ w      Numeric representation of the day of the week                                &quot;0&quot; (for Sunday) through &quot;6&quot; (for Saturday)
+ z      The day of the year (starting from &quot;0&quot;)                                      &quot;0&quot; through &quot;365&quot;      
+ W      ISO-8601 week number of year, weeks starting on Monday                       &quot;00&quot; to (&quot;52&quot; or &quot;53&quot;)
+ F      A full textual representation of a month, such as January or March           &quot;January&quot; through &quot;December&quot;
+ m      Numeric representation of a month, with leading zeros                        &quot;01&quot; through &quot;12&quot;
+ M      A short textual representation of a month, three letters                     &quot;Jan&quot; through &quot;Dec&quot;
+ n      Numeric representation of a month, without leading zeros                     &quot;1&quot; through &quot;12&quot;
+ t      Number of days in the given month                                            &quot;28&quot; through &quot;31&quot;
+ L      Whether it&#x27;s a leap year                                                     &quot;1&quot; if it is a leap year, &quot;0&quot; otherwise
+ o      ISO-8601 year number. This has the same value as Y, except that if the       &quot;2008&quot;
+        ISO week number (W) belongs to the previous or next year, that year 
+        is used instead.
+ Y      A full numeric representation of a year, 4 digits                            &quot;2008&quot;
+ y      A two digit representation of a year                                         &quot;08&quot;
+ a      Lowercase Ante meridiem and Post meridiem                                    &quot;am&quot; or &quot;pm&quot;
+ A      Uppercase Ante meridiem and Post meridiem                                    &quot;AM&quot; or &quot;PM&quot;
+ B      Swatch Internet time                                                         &quot;000&quot; through &quot;999&quot;
+ g      12-hour format of an hour without leading zeros                              &quot;1&quot; through &quot;12&quot;
+ G      24-hour format of an hour without leading zeros                              &quot;0&quot; through &quot;23&quot;
+ h      12-hour format of an hour with leading zeros                                 &quot;01&quot; through &quot;12&quot;
+ H      24-hour format of an hour with leading zeros                                 &quot;00&quot; through &quot;23&quot;
+ i      Minutes with leading zeros                                                   &quot;00&quot; to &quot;59&quot;
+ s      Seconds, with leading zeros                                                  &quot;00&quot; through &quot;59&quot;
+ u      Milliseconds                                                                 &quot;54321&quot;
+ e      Timezone identifier                                                          &quot;UTC&quot;, &quot;EST&quot;, &quot;PST&quot;
+ I      Whether or not the date is in daylight saving time (uppercase i)             &quot;1&quot; if Daylight Saving Time, &quot;0&quot; otherwise
+ O      Difference to Greenwich time (GMT) in hours                                  &quot;+0200&quot;, &quot;-0600&quot;
+ P      Difference to Greenwich time (GMT) with colon between hours and minutes      &quot;+02:00&quot;, &quot;-06:00&quot;
+ T      Timezone abbreviation                                                        &quot;UTC&quot;, &quot;EST&quot;, &quot;PST&quot;
+ Z      Timezone offset in seconds. The offset for timezones west of UTC is          &quot;-43200&quot; through &quot;50400&quot;
+        always negative, and for those east of UTC is always positive.
+ c      ISO 8601 date                                                                &quot;2004-02-12T15:19:21+00:00&quot;
+ r      RFC 2822 formatted date                                                      &quot;Thu, 21 Dec 2000 16:01:07 +0200&quot;
+ U      Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)                   &quot;0&quot;</pre></blockquote>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/114295621580671324675/">phillip....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Feb 11 02:57:28 2008">Feb 11, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Any possibility of getting the ordinal suffix where appropriate? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/113931677457386632890/index.html">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Feb 11 09:36:11 2008">Feb 11, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>The Ordinal suffix (&#x27;st&#x27;, &#x27;nd&#x27;, &#x27;rd&#x27;, &#x27;th&#x27;) is available by calling the .getOrdinal() function on a date. </p><p>Example </p><p>Date.today().getOrdinal(); new Date().add(1).week().getOrdinal(); </p><p>Hope this helps answer your question. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">baxton...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Wed Feb 13 19:11:22 2008">Feb 13, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Hi My display string is like this dateResult = curDate.toString(&#x27;dddd, dd MMMM, yyyy hh:mm tt&#x27;); </p><p>If i enter &quot;1:30p&quot; is shows 01:30 PM </p><p>If i enter &quot;1:30p tomorrow&quot; it shows 01:30 AM  </p><p>Why? What am I doing wrong? </p><p>Thanks </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/113931677457386632890/index.html">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Feb 13 20:16:11 2008">Feb 13, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@baxton015 - Can you confirm you are using the latest code from SVN (<a href="http://www.datejs.com/svn)?" rel="nofollow">http://www.datejs.com/svn)?</a> When I try the strings in the &quot;Mad Skillz&quot; widget on the Datejs home page, they appear to parse correctly. FYI, I think this help request should be posted in the forums. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/117485112588440259770/">balup...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Mar 19 17:29:15 2008">Mar 19, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Could there please be added support for: <a href="http://php.net/strftime" rel="nofollow">http://php.net/strftime</a> <a href="http://www.smarty.net/manual/en/language.modifier.date.format.php" rel="nofollow">http://www.smarty.net/manual/en/language.modifier.date.format.php</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/113931677457386632890/index.html">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Mar 19 23:01:58 2008">Mar 19, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@balupton - Early on we made the decision to go with the much cleaner Java/.NET style of date and time format specifiers. The PHP/Unix format specifier syntax will not be supported in the library. If you have any questions regarding how to format a date into a string, please feel free to ask in the Datejs forums (<a href="http://www.datejs.com/forums/" rel="nofollow">http://www.datejs.com/forums/</a>). </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">depink...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Mon Mar 24 14:27:44 2008">Mar 24, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Any change of getting a timezone format specifier? I know I can invoke getTimezone(), but it would be great to get it within the toString() format! Otherwise, this is great stuff! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/113931677457386632890/index.html">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 25 22:45:40 2008">Mar 25, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@balupton - I&#x27;ve reconsidered adding functionality to convert the PHP/Unix date format to a Java/.NET format. I think the conversion function will be added to an optional &quot;extras.js&quot; module. See the follow Issue for more information. <a href="http://code.google.com/p/datejs/issues/detail?id=34" rel="nofollow">http://code.google.com/p/datejs/issues/detail?id=34</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/113931677457386632890/index.html">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 25 22:48:09 2008">Mar 25, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@depinkham - The timezone format specifier is absolutely a missing piece. There&#x27;s some known loose ends regarding the timezone support in the library, so I&#x27;m going to spend some energy hammering out those details. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/113931677457386632890/index.html">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Apr 12 03:53:57 2008">Apr 12, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Format Specifier support for the Ordinal Suffix has been added to .toString(). Please use &quot;S&quot; to get the ordinal suffix.  </p><p>Example </p><p>Date.today().toString(&quot;S&quot;); // &quot;st, &quot;nd&quot;, &quot;rd&quot; or &quot;th&quot; </p><p>The &quot;S&quot; format specifier can be combined with other format specifiers. </p><p>Example </p><p>Date.today().toString(&quot;MMMM dS, yyyy&quot;); // &quot;April 12th, 2008&quot; </p><p>The .getOrdinal() function has been removed from the library. THE FOLLOWING WILL NO LONGER WORK. </p><p>Example </p><p>Date.today().getOrdinal(); // ERROR: getOrdinal is not a function </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/117826298098717867621/">redeemer...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat May 24 08:22:44 2008">May 24, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m trying to parseExact a date string like &quot;yyyy-MM-ddTHH:mm:ss.000-05:00&quot; but the latter part (-05:00) breaks if it&#x27;s a different time zone (-06:00) is present. I&#x27;ve tried using &quot;P&quot; (noted above) but no joy. I&#x27;m using trunk. I can&#x27;t change the format... google calendar RSS. :) </p><p>I&#x27;ve also tried using just &quot;c&quot;, but the presence of milliseconds in the string breaks it. </p><p>Anything I can try? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/106215004052014389770/">gr4v3...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 30 04:10:35 2008">Sep 30, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>where can i get extras.js ? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/113931677457386632890/index.html">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 30 04:25:04 2008">Sep 30, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@gr4v3m4n - <a href="http://code.google.com/p/datejs/source/browse/#svn/trunk/src" rel="nofollow">http://code.google.com/p/datejs/source/browse/#svn/trunk/src</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/103990310972905000603/index.html">tonyhs...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Apr 15 14:52:50 2009">Apr 15, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>The custom format and standard format for &quot;d&quot; overlaps.  How might I get just the custom format for just the date number? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/103990310972905000603/index.html">tonyhs...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Apr 15 16:38:38 2009">Apr 15, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>As a temporary hack, I deleted the following: </p><p>case&quot;d&quot;:return x.t(c.shortDate); </p><p>That got rid of the shortDate.  But the bad news is, that got ride of the short date. =( </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/113931677457386632890/index.html">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Apr 15 16:40:57 2009">Apr 15, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@tonyhschu - just use the native .getDate() function. </p><p>Example </p><p>new Date().getDate() </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/109319495801357996891/">dcorle...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed May 13 09:25:17 2009">May 13, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>So, I notice that the native function getTimezoneOffset returns the number of minutes from GMT. But this is completely useless because it doesn&#x27;t give the sign - just the absolute value. Any plans to provide a format specifier or method to return the offset, in secs or msecs, of the current Date object? E.g. like the Java TimeZone<a href="https://code.google.com/p/datejs/w/edit/TimeZone">?</a>.getOffset() method. Right now it looks like what I&#x27;ll have to do is use getUTCOffset, extract just the sign char, prepend it to the getTimezoneOffset, and then multiply by 600000. Ouch. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/114993924233175545423/">rosh...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 26 22:58:38 2010">Jan 26, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I keep getting d.format is not a function. What is wrong with the following code </p><p>&lt;script type=&quot;text/javascript&quot; src=&quot;date.js&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;core.js&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;extra.js&quot;&gt;&lt;/script&gt; </p><p>&lt;script type=&quot;text/javascript&quot;&gt; </p><blockquote>//alert(Date(&quot;1264426428434&quot;).toString(&quot;d &quot;)); 
+<blockquote>var d = new Date(&quot;1264426428434&quot;); 
+</blockquote></blockquote><p>//        alert(d.toString(&quot;y&quot;)); <blockquote>alert(d.format(&quot;o&quot;));   
+</blockquote>	 &lt;/script&gt; </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/100777400537196257085/">track...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Feb 22 16:03:58 2010">Feb 22, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@rosh.pr d is NaN, it&#x27;s an invalid date, now if you remove the quotes from the number you will get a Date set to a ms offset from 1970-01-01T00:00:00.000Z ... </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="../../../u/110855629033374251502/index.html">jnthnl...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Jul 27 07:01:20 2011">Jul 27, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Is there a way to escape certain characters? I&#x27;d like to produce e.g. &quot;13hrs&quot; and Date.toString(&#x27;hhrs&#x27;) is not going to do it, as &#x27;hrs&#x27; is going to be interpreted with &#x27;h&#x27; and &#x27;s&#x27; as special characters. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/100895333641505869042/">danor...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Aug 28 10:06:10 2011">Aug 28, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Ditto the previous. How do you escape a character? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/111786515918432881273/">m...@udargo.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 10 16:05:08 2012">Jan 10, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>danor, etc... </p><p>I had the same question and I found a work-around.  Use the HTML ASCII code for the characters you want to insert in the format string.  For instance, I wanted to insert &quot;at&quot; into the string (e.g., &quot;Sunday, April 4, 2022 at 4:44 PM&quot;), but &quot;t&quot; is reserved, so I used &quot;&amp;#97;&amp;#116;&quot; (&quot;&quot;dddd, MMMM dd, yyyy &amp;#97;&amp;#116; h:mm tt&quot;).  Here is a link with all the HTML ASCII codes: <a href="http://www.ascii.cl/htmlcodes.htm" rel="nofollow">http://www.ascii.cl/htmlcodes.htm</a>. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/101351835659965653216/">peng...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 27 20:08:02 2012">Mar 27, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>is it possible to format a date string for a specified timezone in stead of the locale timezone of the client browser? </p><p>e.g. new Date().toString(&quot;yyyy-MM-dd HH:mm:ss&quot;, &quot;PDT&quot;); </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/111332519122329365770/">c.philli...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Apr 29 17:30:11 2012">Apr 29, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Why aren&#x27;t more than just 4 US time zones supported? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/106009519219609317531/">jglawre...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Jun  6 08:19:19 2012">Jun 6, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>When I try Date().toString(&#x27;r&#x27;) for the rfc1123 format all I get back is &quot;r&quot; </p><p>Am I doing something wrong? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/108899551564800241882/">schmeng...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Aug 24 05:16:22 2012">Aug 24, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Use the trunk version, in the Alpha version the &quot;r&quot; format is not yet supported. But the rfc1123 format is broken anyways, the string contains &quot;GMT&quot; while the &quot;M&quot; is interpreted as month. I tried changing the constant, setting &quot;O&quot; instead of &quot;GMT&quot; but the identifier for timezones is not recognized in toString(). </p><p>It //should// work with format() though. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/118230578806519885833/">peter.lu...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Oct  4 07:09:34 2012">Oct 4, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>The S for ordinal suffix does not work, i.e. it outputs S instead of the appropriate st, nd, rd, th. Despite claims in these comments the toOrdinal() method is still in the source. I guess that means I&#x27;ll have to do myDate.toString(&quot;dddd d{0} MMMM yyyy&quot;).replace(&quot;{0}&quot;, myDate.getOrdinal()) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/103869475470234173335/">ASHWANI7...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Oct 10 06:39:10 2012">Oct 10, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>following is code to remove ordinal of date IT is running successfully: </p><p>import java.text.DateFormat<a href="https://code.google.com/p/datejs/w/edit/DateFormat">?</a>; import java.text.ParseException<a href="https://code.google.com/p/datejs/w/edit/ParseException">?</a>; import java.text.SimpleDateFormat<a href="https://code.google.com/p/datejs/w/edit/SimpleDateFormat">?</a>; import java.util.Date; import java.util.regex.Pattern; import java.util.regex.Matcher; </p><p>public class patrn { </p><blockquote>private static String deleteOrdinal(String dateString) { 
+<blockquote>Pattern p1 = Pattern.compile(&quot;([0-9]+)(st|nd|rd|th)&quot;); 
+<blockquote>Matcher m = p1.matcher(dateString); 
+while (m.find()) { 
+<blockquote>dateString = dateString.replaceAll(Matcher.quoteReplacement(m.group(0)), m.group(1)); 
+</blockquote>} 
+return dateString; 
+} 
+</blockquote></blockquote></blockquote><p>	 <blockquote>public static void main(String<a href=""></a> args) { 
+</blockquote></p><blockquote>String dateString=&quot;August 21st, 2012&quot;; 
+SimpleDateFormat<a href="https://code.google.com/p/datejs/w/edit/SimpleDateFormat">?</a> sdf = new SimpleDateFormat<a href="https://code.google.com/p/datejs/w/edit/SimpleDateFormat">?</a>(&quot;MMMM dd, yyyy&quot;); 
+Date emp1joinDate = null; 
+try { 
+emp1joinDate=sdf.parse(deleteOrdinal(dateString)); 
+} catch (ParseException<a href="https://code.google.com/p/datejs/w/edit/ParseException">?</a> e) { 
+<blockquote>// TODO Auto-generated catch block 
+e.printStackTrace(); 
+</blockquote>} 
+</blockquote><blockquote>} 
+</blockquote><p>} </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/108553566094074104089/">d...@gmx.ch</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Oct 11 15:40:42 2012">Oct 11, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Unfortunately, one of the supposedly most needed functions when dealing with locales doesn&#x27;t work:  </p><p>.format(&#x27;%x&#x27;) </p><p>It just returns the day&#x27;s number, instead of the preferred date representation for the current locale without the time &quot;4/13/2008&quot;, as documented above. </p><p>In extras.js I found:  [...] case&quot;%x&quot;:return t(&quot;d&quot;); [...] Obviously, this returns just the day.  Any Idea how this can be fixed? </p><p>When the user types a date, e.g &quot;13.4.2008&quot; on a localized german page, I must parse it (which works fine) and then correct it to display &quot;13.04.2012&quot;, but of course I do not want to hard-code the format string as &quot;dd.MM.yyyy&quot;, since with a different locale it should perhaps be &quot;4/13/2008&quot;. </p><p>Thanks, Don P </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/108553566094074104089/">d...@gmx.ch</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Oct 11 16:48:24 2012">Oct 11, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi again, </p><p>Now it seems to work with .toString(Date.<a href="CultureInfo.html">CultureInfo</a>.formatPatterns.shortDate); and without extras.js. </p><p>Think I can live with it :) </p><p>Don P </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="https://code.google.com/u/108553566094074104089/">d...@gmx.ch</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Oct 11 17:31:06 2012">Oct 11, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Finally: to make the %x format work as desired in extras.js, I replaced <tt>case&quot;%x&quot;:return t(&quot;d&quot;);</tt> with <tt>case&quot;%x&quot;:return t(Date.CultureInfo.formatPatterns.shortDate);</tt> </p><p>Don P </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code38ltmpl=phosting38continue=https://code.google.com/p/datejs/wiki/FormatSpecifiers38followup=https://code.google.com/p/datejs/wiki/FormatSpecifiers"
+ >Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="FormatSpecifiers" >
+ <input type="hidden" name="token" value="" >
+ </form>
+
+
+ <script src="https://ssl.gstatic.com/codesite/ph/9019872673698702027/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/9019872673698702027/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/9019872673698702027/js/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/9019872673698702027/js/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
+

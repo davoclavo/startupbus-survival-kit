@@ -7,3 +7,72 @@
 [submodule "libraries/django/django-debug-toolbar"]
 	path = libraries/django/django-debug-toolbar
 	url = git@github.com:django-debug-toolbar/django-debug-toolbar.git
+[submodule "libraries/js/backbone"]
+	path = libraries/js/backbone
+	url = git@github.com:documentcloud/backbone.git
+[submodule "libraries/js/bootstrap/bootstrap"]
+	path = libraries/js/bootstrap/bootstrap
+	url = git@github.com:twitter/bootstrap.git
+[submodule "libraries/js/bootstrap/Font-Awesome"]
+	path = libraries/js/bootstrap/Font-Awesome
+	url = git@github.com:FortAwesome/Font-Awesome.git
+[submodule "libraries/js/accountingjs"]
+	path = libraries/js/accountingjs
+	url = git@github.com:josscrowcroft/accounting.js.git
+[submodule "libraries/js/jquery-waypoints"]
+	path = libraries/js/jquery-waypoints
+	url = git@github.com:imakewebthings/jquery-waypoints.git
+[submodule "libraries/js/jquery-transit"]
+	path = libraries/js/jquery-transit
+	url = git@github.com:rstacruz/jquery.transit.git
+[submodule "libraries/js/jquery-backstretch"]
+	path = libraries/js/jquery-backstretch
+	url = git@github.com:srobbin/jquery-backstretch.git
+[submodule "libraries/js/gmaps"]
+	path = libraries/js/gmaps
+	url = git@github.com:HPNeo/gmaps.git
+[submodule "libraries/js/d3/d3-wiki"]
+	path = libraries/js/d3/d3-wiki
+	url = git@github.com:mbostock/d3.wiki.git
+[submodule "libraries/js/keypress"]
+	path = libraries/js/keypress
+	url = git@github.com:dmauro/Keypress.git
+[submodule "libraries/js/parsleyjs"]
+	path = libraries/js/parsleyjs
+	url = git@github.com:guillaumepotier/Parsley.js.git
+[submodule "libraries/js/html5-boilerplate"]
+	path = libraries/js/html5-boilerplate
+	url = git@github.com:h5bp/html5-boilerplate.git
+[submodule "libraries/js/jquery-file-upload"]
+	path = libraries/js/jquery-file-upload
+	url = git@github.com:blueimp/jQuery-File-Upload.git
+[submodule "libraries/js/html5demos"]
+	path = libraries/js/html5demos
+	url = git@github.com:remy/html5demos.git
+[submodule "libraries/js/bootstrap/bootstrap-modal"]
+	path = libraries/js/bootstrap/bootstrap-modal
+	url = git@github.com:jschr/bootstrap-modal.git
+[submodule "libraries/js/bootstrap/bootswatch"]
+	path = libraries/js/bootstrap/bootswatch
+	url = git@github.com:thomaspark/bootswatch.git
+[submodule "libraries/js/holder"]
+	path = libraries/js/holder
+	url = git@github.com:imsky/holder.git
+[submodule "libraries/js/jquery-wookmark"]
+	path = libraries/js/jquery-wookmark
+	url = git@github.com:GBKS/Wookmark-jQuery.git
+[submodule "libraries/js/jquery-timeago"]
+	path = libraries/js/jquery-timeago
+	url = git@github.com:rmm5t/jquery-timeago.git
+[submodule "libraries/js/joyride"]
+	path = libraries/js/joyride
+	url = git@github.com:zurb/joyride.git
+[submodule "libraries/js/jquery-one-page-nav"]
+	path = libraries/js/jquery-one-page-nav
+	url = git@github.com:davist11/jQuery-One-Page-Nav.git
+[submodule "libraries/js/director"]
+	path = libraries/js/director
+	url = git@github.com:flatiron/director.git
+[submodule "libraries/js/jquery-anystretch"]
+	path = libraries/js/jquery-anystretch
+	url = git@github.com:danmillar/jquery-anystretch.git

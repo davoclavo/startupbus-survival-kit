@@ -1,0 +1,4741 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="APIDocumentation.html" />
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"domainName":null,"assetHostPath":"http://www.gstatic.com/codesite/ph","relativeBaseUrl":"","projectName":"datejs","projectHomeUrl":"/p/datejs","token":null,"assetVersionPath":"http://www.gstatic.com/codesite/ph/9019872673698702027","profileUrl":null,"loggedInUserEmail":null};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-2699273-4'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>APIDocumentation - 
+ datejs -
+ 
+ Date class and instance methods provided by the Datejs library. - 
+ A JavaScript Date Library - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9019872673698702027/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9019872673698702027/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="http://code.google.com/feeds/p/datejs/svnchanges/basic?path=/wiki/APIDocumentation.wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9019872673698702027/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">.menuIcon.off { background: no-repeat url("http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif") 0 -42px }
+ .menuIcon.on { background: no-repeat url("http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif") 0 -28px }
+ .menuIcon.down { background: no-repeat url("http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif") 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="APIDocumentation.html#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code38ltmpl=phosting38continue=http://code.google.com/p/datejs/wiki/APIDocumentation38followup=http://code.google.com/p/datejs/wiki/APIDocumentation" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="http://code.google.com/p/datejs">
+ <a href="http://code.google.com/p/datejs/">
+ 
+ 
+ <img src="http://code.google.com/p/datejs/logo?cct=1330372383"
+ alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="http://code.google.com/p/datejs/"><span itemprop="name">datejs</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="http://code.google.com/p/datejs/"><span itemprop="description">A JavaScript Date Library</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="http://code.google.com/p/datejs/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="../downloads/list.html" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="http://code.google.com/p/datejs/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="../issues/list.html"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="../source/checkout.html"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/datejs/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">APIDocumentation</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Date class and instance methods provided by the Datejs library.</i>
+ 
+ 
+ <br/>
+ 
+ <a class="label" style="padding-top: 2px"
+ href="http://code.google.com/p/datejs/w/list?q=label:Featured"
+ title="Listed on project home page"
+ >Featured</a>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Wed Jul 28 17:27:33 2010">
+ Jul 28, 2010</span>
+ 
+ by 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="Public_Static_Methods"></a>Public Static Methods<a href="APIDocumentation.html#Public_Static_Methods" class="section_anchor"></a></h1><hr/><h2><a name="today"></a><img src="http://www.datejs.com/images/function.gif" /> today<a href="APIDocumentation.html#today" class="section_anchor"></a></h2><blockquote><h3><a name="Date.today_()_:_Date"></a>Date.today () : <tt>Date</tt><a href="APIDocumentation.html#Date.today_()_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Gets a date that is set to the current date. The time is set to the start of the day (00:00 or 12:00 AM). 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    The current date. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today(); // Equivalent to new Date().clearTime()</pre></blockquote><p>. </p><h2><a name="compare"></a><img src="http://www.datejs.com/images/function.gif" /> compare<a href="APIDocumentation.html#compare" class="section_anchor"></a></h2><blockquote><h3><a name="Date.compare_(_Date_date1,_Date_date2_)_:_Number"></a>Date.compare ( <tt>Date</tt> date1, <tt>Date</tt> date2 ) : <tt>Number</tt><a href="APIDocumentation.html#Date.compare_(_Date_date1,_Date_date2_)_:_Number" class="section_anchor"></a></h3>
+</blockquote><blockquote>Compares the first date to the second date and returns an number indication of their relative values. -1 = this is lessthan date. 0 = values are equal. 1 = this is greaterthan date. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Date</tt> date1}     First Date object to compare. <strong>required</strong> </li><li>{<tt>Date</tt> date2}     Second Date object to compare to. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Number</tt>}  -1 = date1 is <i>lessthan</i> date2. 0 = values are <i>equal</i>. 1 = date1 is <i>greaterthan</i> date2. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">var today = Date.today();
+var past = Date.today().add(-6).days();
+var future = Date.today().add(6).days();
+
+
+Date.compare(today, future);                    // -1
+Date.compare(today, new Date().clearTime());    // 0
+Date.compare(today, past)                       // 1</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#between">between</a> </li><li><a href="APIDocumentation.html#compareTo">compareTo</a> </li><li><a href="APIDocumentation.html#equals">equals</a> </li><li><a href="APIDocumentation.html#isAfter">isAfter</a> </li><li><a href="APIDocumentation.html#isBefore">isBefore</a> </li></ul><p>  . </p><h2><a name="equals"></a><img src="http://www.datejs.com/images/function.gif" /> equals<a href="APIDocumentation.html#equals" class="section_anchor"></a></h2><blockquote><h3><a name="Date.equals_(_Date_date1,_Date_date2_)_:_Boolean"></a>Date.equals ( <tt>Date</tt> date1, <tt>Date</tt> date2 ) : <tt>Boolean</tt><a href="APIDocumentation.html#Date.equals_(_Date_date1,_Date_date2_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Compares the first Date object to the second Date object and returns true if they are equal. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><p>   <ul><li>{<tt>Date</tt> date1}     First Date object to compare. <strong>required</strong> </li><li>{<tt>Date</tt> date2}     Second Date object to compare to <strong>required</strong> </li></ul></p><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><p>  <blockquote>{<tt>Boolean</tt>} true if dates are equal. false if they are not equal. 
+</blockquote>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.equals(Date.today(), new Date().clearTime());   // true
+
+var d1 = Date.today();
+var d2 = Date.today().addHours(5);
+var d3 = new Date().clearTime();
+var d4 = &quot;foo&quot;;
+
+Date.equals(d1, d2);  // false
+Date.equals(d1, d3);  // true
+Date.equals(d1, d4);  // throws exception</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#between">between</a> </li><li><a href="APIDocumentation.html#compareTo">compareTo</a> </li><li><a href="APIDocumentation.html#equals">equals</a> </li><li><a href="APIDocumentation.html#isAfter">isAfter</a> </li><li><a href="APIDocumentation.html#isBefore">isBefore</a> </li></ul><p>  . </p><h2><a name="getDayNumberFromName"></a><img src="http://www.datejs.com/images/function.gif" /> getDayNumberFromName<a href="APIDocumentation.html#getDayNumberFromName" class="section_anchor"></a></h2><blockquote><h3><a name="Date.getDayNumberFromName_(_String_dayName_)_:_Number"></a>Date.getDayNumberFromName ( <tt>String</tt> dayName ) : <tt>Number</tt><a href="APIDocumentation.html#Date.getDayNumberFromName_(_String_dayName_)_:_Number" class="section_anchor"></a></h3>
+</blockquote><blockquote>Gets the day number (0-6) if given a <a href="http://code.google.com/p/datejs/wiki/CultureInfo">culture-specific</a> string which is a valid full or abbreviated day name. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>String</tt> dayName}     The name of the day (eg. &quot;Monday, &quot;Mon&quot;, &quot;tuesday&quot;, &quot;tue&quot;, &quot;We&quot;, &quot;we&quot;). </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Number</tt>}  The day number 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.getDayNumberFromName(&#x27;Tuesday&#x27;); // 2
+Date.getDayNumberFromName(&#x27;sat&#x27;);     // 6
+Date.getDayNumberFromName(&#x27;SUNDAY&#x27;);     // 0</pre></blockquote><p>. </p><h2><a name="getMonthNumberFromName"></a><img src="http://www.datejs.com/images/function.gif" /> getMonthNumberFromName<a href="APIDocumentation.html#getMonthNumberFromName" class="section_anchor"></a></h2><blockquote><h3><a name="Date.getMonthNumberFromName_(_String_monthName_)_:_Number"></a>Date.getMonthNumberFromName ( <tt>String</tt> monthName ) : <tt>Number</tt><a href="APIDocumentation.html#Date.getMonthNumberFromName_(_String_monthName_)_:_Number" class="section_anchor"></a></h3>
+</blockquote><blockquote>Gets the month number (0-11) if given a <a href="http://code.google.com/p/datejs/wiki/CultureInfo">culture-specific</a> string which is a valid full or abbreviated month name. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>String</tt> monthName}   The name of the month (eg. &quot;February, &quot;Feb&quot;, &quot;october&quot;, &quot;oct&quot;). </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Number</tt>}  The month number 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.getMonthNumberFromName(&#x27;January&#x27;); // 0
+Date.getMonthNumberFromName(&#x27;feb&#x27;);  // 1
+Date.getMonthNumberFromName(&#x27;July&#x27;); // 6
+Date.getMonthNumberFromName(&#x27;DECEMBER&#x27;); // 11</pre></blockquote><p>. </p><h2><a name="isLeapYear"></a><img src="http://www.datejs.com/images/function.gif" /> isLeapYear<a href="APIDocumentation.html#isLeapYear" class="section_anchor"></a></h2><blockquote><h3><a name="Date.isLeapYear_(_Number_year_)_:_Boolean"></a>Date.isLeapYear ( <tt>Number</tt> year ) : <tt>Boolean</tt><a href="APIDocumentation.html#Date.isLeapYear_(_Number_year_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Returns true if the given year is a leap year, false otherwise. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> year}   The year. </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if date is within a LeapYear, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.isLeapYear(Date.today().getFullYear()); // true|false
+var date = new Date(2008,1,29);
+Date.isLeapYear(date.getFullYear);           // true</pre></blockquote><p>. </p><h2><a name="getDaysInMonth"></a><img src="http://www.datejs.com/images/function.gif" /> getDaysInMonth<a href="APIDocumentation.html#getDaysInMonth" class="section_anchor"></a></h2><blockquote><h3><a name="Date.getDaysInMonth_(_Number_year,_Number_month_)_:_Number"></a>Date.getDaysInMonth ( <tt>Number</tt> year, <tt>Number</tt> month ) : <tt>Number</tt><a href="APIDocumentation.html#Date.getDaysInMonth_(_Number_year,_Number_month_)_:_Number" class="section_anchor"></a></h3>
+</blockquote><blockquote>Gets the number of days in the month, given a year and month value. Automatically corrects for leap year. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> year}   The year. </li><li>{<tt>Number</tt> month}   The month (0-11). </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Number</tt>}  The number of days in the month. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.getDaysInMonth(2008, 1);  // 29
+Date.getDaysInMonth(2007, 10); // 30</pre></blockquote><p>. </p><h2><a name="getTimezoneAbbreviation"></a><img src="http://www.datejs.com/images/function.gif" /> getTimezoneAbbreviation<a href="APIDocumentation.html#getTimezoneAbbreviation" class="section_anchor"></a></h2><blockquote><h3><a name="Date.getTimezoneAbbreviation_(_Number_timezoneOffset,_Boolean_is"></a>Date.getTimezoneAbbreviation ( <tt>Number</tt> timezoneOffset, <tt>Boolean</tt> isDayLightSavingsTime ) : <tt>String</tt><a href="APIDocumentation.html#Date.getTimezoneAbbreviation_(_Number_timezoneOffset,_Boolean_is" class="section_anchor"></a></h3>
+</blockquote><blockquote>Returns a <a href="http://code.google.com/p/datejs/wiki/CultureInfo">culture-specific</a> timezone abbreviation based on a given offset and a boolean indicating whether daylight savings time is in effect. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> timezoneOffset}   The year. </li><li>{<tt>Boolean</tt> isDayLightSavingsTime}   Whether the date instance is observing Daylight Saving Time (Summer Time) </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>String</tt>}  The timezone abbreviation 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">var today = Date.today();
+Date.getTimezoneAbbreviation(today.getTimezoneOffset, today.isDayLightSavingsTime()); // &quot;UTC&quot;, &quot;GMT&quot;, &quot;EST&quot;, &quot;PDT&quot;, etc.</pre></blockquote><p>. </p><h2><a name="getTimezoneOffset"></a><img src="http://www.datejs.com/images/function.gif" /> getTimezoneOffset<a href="APIDocumentation.html#getTimezoneOffset" class="section_anchor"></a></h2><blockquote><h3><a name="Date.getTimezoneOffset_(_String_timezoneAbbreviation,_Boolean_is"></a>Date.getTimezoneOffset ( <tt>String</tt> timezoneAbbreviation, <tt>Boolean</tt> isDayLightSavingsTime ) : <tt>Number</tt><a href="APIDocumentation.html#Date.getTimezoneOffset_(_String_timezoneAbbreviation,_Boolean_is" class="section_anchor"></a></h3>
+</blockquote><blockquote>Gets the timezone offset if given a <a href="http://code.google.com/p/datejs/wiki/CultureInfo">culture-specific</a> string which is a valid full or abbreviated timezone name and a boolean indicating whether daylight savings time is in effect. 
+</blockquote><blockquote><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> timezoneAbbreviation}   The timezone abbreviation </li><li>{<tt>Boolean</tt> isDayLightSavingsTime}   Whether the date instance is observing Daylight Saving Time (Summer Time) </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>String</tt>}  The timezone abbreviation 
+</blockquote><p>   <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.getTimezoneOffset(&quot;PST&quot;, true);</pre></blockquote><p>. </p><h2><a name="parse"></a><img src="http://www.datejs.com/images/function.gif" /> parse<a href="APIDocumentation.html#parse" class="section_anchor"></a></h2><blockquote><h3><a name="Date.parse_(_String_dateString_)_:_Date"></a>Date.parse ( <tt>String</tt> dateString ) : <tt>Date</tt><a href="APIDocumentation.html#Date.parse_(_String_dateString_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Converts the specified string value into its JavaScript Date equivalent using <a href="http://code.google.com/p/datejs/wiki/CultureInfo">culture-specific</a> format information. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>String</tt> dateString}   The string value to convert into a Date object. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    A Date object or null if the string cannot be converted into a Date. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.parse(&quot;today&quot;)
+Date.parse(&quot;t + 5 d&quot;) // today + 5 days
+Date.parse(&quot;next thursday&quot;)
+Date.parse(&quot;February 20th 1973?)
+Date.parse(&quot;Thu, 1 July 2004 22:30:00?)</pre></blockquote><p>. </p><h2><a name="parseExact"></a><img src="http://www.datejs.com/images/function.gif" /> parseExact<a href="APIDocumentation.html#parseExact" class="section_anchor"></a></h2><blockquote><h3><a name="Date.parseExact_(_String_dateString,_String_formatStringOrArray"></a>Date.parseExact ( <tt>String</tt> dateString, <tt>String</tt> formatStringOrArray ) : <tt>Date</tt><a href="APIDocumentation.html#Date.parseExact_(_String_dateString,_String_formatStringOrArray" class="section_anchor"></a></h3>
+</blockquote><blockquote>Converts the specified string value into its JavaScript Date equivalent using the specified format (string) or formats (array). The format of the string value must match one of the supplied formats exactly. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>String</tt> dateString}   The string value to convert into a Date object. <strong>required</strong>. </li><li>{Object formatStringOrArray}   The expected format {<tt>String</tt>} or an array of expected formats {Array} of the date string. <strong>required</strong>. </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    A Date object or null if the string cannot be converted into a Date. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.parseExact(&quot;10/15/2004&quot;, &quot;M/d/yyyy&quot;);  // The Date of 15-Oct-2004
+Date.parse(&quot;15-Oct-2004&quot;, &quot;d-MMM-yyyy&quot;);    // The Date of 15-Oct-2004
+Date.parse(&quot;2004.10.15&quot;, &quot;yyyy.MM.dd&quot;);     // The Date of 15-Oct-2004
+Date.parseExact(&quot;10/15/2004&quot;, [&quot;M/d/yyyy&quot;, &quot;MMMM d, yyyy&quot;]); // The Date of 15-Oct-2004</pre></blockquote><p>. </p><h2><a name="validateDay"></a><img src="http://www.datejs.com/images/function.gif" /> validateDay<a href="APIDocumentation.html#validateDay" class="section_anchor"></a></h2><blockquote><h3><a name="Date.validateDay_(_Number_day,_Number_fullYear,_Number_monthNumb"></a>Date.validateDay ( <tt>Number</tt> day, <tt>Number</tt> fullYear, <tt>Number</tt> monthNumber ) : <tt>Boolean</tt><a href="APIDocumentation.html#Date.validateDay_(_Number_day,_Number_fullYear,_Number_monthNumb" class="section_anchor"></a></h3>
+</blockquote><blockquote>Validates the number is within an acceptable range for the days in a month [0-MaxDaysInMonth]. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> day}   The number to check if within range. </li><li>{<tt>Number</tt> fullYear}   The number to check if within range. </li><li>{<tt>Number</tt> monthNumber}   The number to check if within range. </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.validateDay(15, 2007, 1);  // true, 15-Feb-2007
+Date.validateDay(31, 2007, 10); // false, throws RangeError exception</pre></blockquote><p>. </p><h2><a name="validateHour"></a><img src="http://www.datejs.com/images/function.gif" /> validateHour<a href="APIDocumentation.html#validateHour" class="section_anchor"></a></h2><blockquote><h3><a name="Date.validateHour_(_Number_hour_)_:_Boolean"></a>Date.validateHour ( <tt>Number</tt> hour ) : <tt>Boolean</tt><a href="APIDocumentation.html#Date.validateHour_(_Number_hour_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Validates the number is within an acceptable range for hours [0-23]. Returns true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> hour}   The number to check if within range. </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.validateHour(15); // true
+Date.validateHour(24); // false, throws RangeError exception</pre></blockquote><p>. </p><h2><a name="validateMillisecond"></a><img src="http://www.datejs.com/images/function.gif" /> validateMillisecond<a href="APIDocumentation.html#validateMillisecond" class="section_anchor"></a></h2><blockquote><h3><a name="Date.validateMillisecond_(_Number_milliseconds_)_:_Boolean"></a>Date.validateMillisecond ( <tt>Number</tt> milliseconds ) : <tt>Boolean</tt><a href="APIDocumentation.html#Date.validateMillisecond_(_Number_milliseconds_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Validates the number is within an acceptable range for milliseconds [0-999]. Returns true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> milliseconds}   The number to check if within range. </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.validateMillisecond(500); // true</pre></blockquote><p>. </p><h2><a name="validateMinute"></a><img src="http://www.datejs.com/images/function.gif" /> validateMinute<a href="APIDocumentation.html#validateMinute" class="section_anchor"></a></h2><blockquote><h3><a name="Date.validateMinute_(_Number_minutes_)_:_Boolean"></a>Date.validateMinute ( <tt>Number</tt> minutes ) : <tt>Boolean</tt><a href="APIDocumentation.html#Date.validateMinute_(_Number_minutes_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Validates the number is within an acceptable range for minutes [0-59]. Returns true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><p>  <ul><li>{<tt>Number</tt> minutes}   The number to check if within range. </li></ul>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.validateMinute(45); // true
+Date.validateMinute(60); // false, throws RangeError exception</pre></blockquote><p>. </p><h2><a name="validateMonth"></a><img src="http://www.datejs.com/images/function.gif" /> validateMonth<a href="APIDocumentation.html#validateMonth" class="section_anchor"></a></h2><blockquote><h3><a name="Date.validateMonth_(_Number_month_)_:_Boolean"></a>Date.validateMonth ( <tt>Number</tt> month ) : <tt>Boolean</tt><a href="APIDocumentation.html#Date.validateMonth_(_Number_month_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Validates the number is within an acceptable range for months [0-11]. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> month}   The number to check if within range. </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.validateMonth(0);  // true, &quot;January&quot;
+Date.validateMonth(12); // false, throws RangeError exception</pre></blockquote><p>. </p><h2><a name="validateSecond"></a><img src="http://www.datejs.com/images/function.gif" /> validateSecond<a href="APIDocumentation.html#validateSecond" class="section_anchor"></a></h2><blockquote><h3><a name="Date.validateSecond_(_Number_second_)_:_Boolean"></a>Date.validateSecond ( <tt>Number</tt> second ) : <tt>Boolean</tt><a href="APIDocumentation.html#Date.validateSecond_(_Number_second_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Validates the number is within an acceptable range for seconds [0-59]. Returns true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><p>  <ul><li>{<tt>Number</tt> second}   The number to check if within range. </li></ul>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.validateSecond(15); // true
+Date.validateSecond(60); // false, throws RangeError exception</pre></blockquote><p>. </p><h2><a name="validateYear"></a><img src="http://www.datejs.com/images/function.gif" /> validateYear<a href="APIDocumentation.html#validateYear" class="section_anchor"></a></h2><blockquote><h3><a name="Date.validateYear_(_Number_year_)_:_Boolean"></a>Date.validateYear ( <tt>Number</tt> year ) : <tt>Boolean</tt><a href="APIDocumentation.html#Date.validateYear_(_Number_year_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Validates the number is within an acceptable range for years [0-9999]. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> year}   The number to check if within range. </li></ul><p>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if within range, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.validateYear(2007); // true</pre></blockquote><p>. </p><h1><a name="Public_Instance_Methods"></a>Public Instance Methods<a href="APIDocumentation.html#Public_Instance_Methods" class="section_anchor"></a></h1><hr/><h2><a name="add"></a><img src="http://www.datejs.com/images/function.gif" /> add<a href="APIDocumentation.html#add" class="section_anchor"></a></h2><blockquote><h3><a name=".add_(_Object_config_)_:_Date"></a>.add ( <tt>Object</tt> config ) : <tt>Date</tt><a href="APIDocumentation.html#.add_(_Object_config_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Adds (or subtracts) to the value of the year, month, day, hour, minute, second, millisecond of the date instance using given configuration object. Positive and Negative values allowed. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Object</tt> config}   Configuration object containing attributes (months, days, etc.) </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().add({ days: 5, months: 1 });
+new Date().add({ years: -1, hours: -6 });</pre></blockquote><p>  <blockquote>The following details all the options for .add(). 
+</blockquote>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">// returns Jul 26 2009 18:45:30 given today as 11-Jan-2008
+Date.today().add({
+    milliseconds: 500,
+    seconds: 30,
+    minutes: 45,
+    hours: 18,
+    days: 15,
+    months: 6,
+    years: 1
+    });
+ 
+// as one line
+Date.today().add({milliseconds: 500, seconds: 30, minutes: 45, hours: 18, days: 15, months: 6, years: 1});
+
+// as separate config object
+var config = {milliseconds: 500, seconds: 30, minutes: 45, hours: 18, days: 15, months: 6, years: 1};
+Date.today().add(config);</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#set">set</a> </li></ul><p>. </p><h2><a name="addMilliseconds"></a><img src="http://www.datejs.com/images/function.gif" /> addMilliseconds<a href="APIDocumentation.html#addMilliseconds" class="section_anchor"></a></h2><blockquote><h3><a name=".addMilliseconds_(_Number_milliseconds_)_:_Date"></a>.addMilliseconds ( <tt>Number</tt> milliseconds ) : <tt>Date</tt><a href="APIDocumentation.html#.addMilliseconds_(_Number_milliseconds_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Adds the specified number of milliseconds to this instance. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> milliseconds}   The number of milliseconds to add. The number can be positive or negative. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().addMilliseconds(500);
+Date.today().addMilliseconds(-500);</pre></blockquote><p>. </p><h2><a name="addSeconds"></a><img src="http://www.datejs.com/images/function.gif" /> addSeconds<a href="APIDocumentation.html#addSeconds" class="section_anchor"></a></h2><blockquote><h3><a name=".addSeconds_(_Number_seconds_)_:_Date"></a>.addSeconds ( <tt>Number</tt> seconds ) : <tt>Date</tt><a href="APIDocumentation.html#.addSeconds_(_Number_seconds_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Adds the specified number of seconds to this instance given the number of seconds to add. The number can be positive or negative. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Seconds</tt>}   The number of seconds to add. The number can be positive or negative. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().addSeconds(30);
+Date.today().addSeconds(-30);</pre></blockquote><p>. </p><h2><a name="addMinutes"></a><img src="http://www.datejs.com/images/function.gif" /> addMinutes<a href="APIDocumentation.html#addMinutes" class="section_anchor"></a></h2><blockquote><h3><a name=".addMinutes_(_Number_minutes_)_:_Date"></a>.addMinutes ( <tt>Number</tt> minutes ) : <tt>Date</tt><a href="APIDocumentation.html#.addMinutes_(_Number_minutes_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Adds the specified number of minutes to this instance given the number of minutes to add. The number can be positive or negative. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number minutes</tt>}   The number of seconds to add. The number can be positive or negative. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().addMinutes(45);
+Date.today().addMinutes(-45);</pre></blockquote><p>. </p><h2><a name="addHours"></a><img src="http://www.datejs.com/images/function.gif" /> addHours<a href="APIDocumentation.html#addHours" class="section_anchor"></a></h2><blockquote><h3><a name=".addHours_(_Number_hours_)_:_Date"></a>.addHours ( <tt>Number</tt> hours ) : <tt>Date</tt><a href="APIDocumentation.html#.addHours_(_Number_hours_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Adds the specified number of hours to this instance given the number of hours to add. The number can be positive or negative. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> hours}   The number of hours to add. The number can be positive or negative. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().addHours(6);
+Date.today().addHours(-6);</pre></blockquote><p>. </p><h2><a name="addDays"></a><img src="http://www.datejs.com/images/function.gif" /> addDays<a href="APIDocumentation.html#addDays" class="section_anchor"></a></h2><blockquote><h3><a name=".addDays_(_Number_days_)_:_Date"></a>.addDays ( <tt>Number</tt> days ) : <tt>Date</tt><a href="APIDocumentation.html#.addDays_(_Number_days_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Adds the specified number of days to this instance.  The number can be positive or negative. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> days}   The number of days to add. The number can be positive or negative. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().addDays(1);
+Date.today().addDays(-1);</pre></blockquote><p>. </p><h2><a name="addWeeks"></a><img src="http://www.datejs.com/images/function.gif" /> addWeeks<a href="APIDocumentation.html#addWeeks" class="section_anchor"></a></h2><blockquote><h3><a name=".addWeeks_(_Number_weeks_)_:_Date"></a>.addWeeks ( <tt>Number</tt> weeks ) : <tt>Date</tt><a href="APIDocumentation.html#.addWeeks_(_Number_weeks_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Adds the specified number of weeks to this instance given the number of weeks to add. The number can be positive or negative. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> weeks}   The number of weeks to add. The number can be positive or negative. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().addWeeks(1);
+Date.today().addWeeks(-1);</pre></blockquote><p>. </p><h2><a name="addMonths"></a><img src="http://www.datejs.com/images/function.gif" /> addMonths<a href="APIDocumentation.html#addMonths" class="section_anchor"></a></h2><blockquote><h3><a name=".addMonths_(_Number_months_)_:_Date"></a>.addMonths ( <tt>Number</tt> months ) : <tt>Date</tt><a href="APIDocumentation.html#.addMonths_(_Number_months_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Adds the specified number of months to this instance given the number of months to add. The number can be positive or negative. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> months}   The number of months to add. The number can be positive or negative. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().addMonths(6);
+Date.today().addMonths(-6);</pre></blockquote><p>. </p><h2><a name="addYears"></a><img src="http://www.datejs.com/images/function.gif" /> addYears<a href="APIDocumentation.html#addYears" class="section_anchor"></a></h2><blockquote><h3><a name=".addYears_(_Number_years_)_:_Date"></a>.addYears ( <tt>Number</tt> years ) : <tt>Date</tt><a href="APIDocumentation.html#.addYears_(_Number_years_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Adds the specified number of years to this instance given the number of years to add. The number can be positive or negative. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> years}   The number of years to add. The number can be positive or negative. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().addYears(10);
+Date.today().addYears(-10);</pre></blockquote><p>. </p><h2><a name="clearTime"></a><img src="http://www.datejs.com/images/function.gif" /> clearTime<a href="APIDocumentation.html#clearTime" class="section_anchor"></a></h2><blockquote><h3><a name=".clearTime_(__)_:_Date"></a>.clearTime (  ) : <tt>Date</tt><a href="APIDocumentation.html#.clearTime_(__)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Resets the time of this Date object to 12:00 AM (00:00), which is the start of the day. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this  
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">new Date().clearTime(); // same as Date.today()</pre></blockquote><p>. </p><h2><a name="setTimeToNow"></a><img src="http://www.datejs.com/images/function.gif" /> setTimeToNow<a href="APIDocumentation.html#setTimeToNow" class="section_anchor"></a></h2><blockquote><h3><a name=".setTimeToNow_(__)_:_Date"></a>.setTimeToNow (  ) : <tt>Date</tt><a href="APIDocumentation.html#.setTimeToNow_(__)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Resets the time of this Date object to the current time (&#x27;now&#x27;). 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><p>  <blockquote>None 
+</blockquote></p><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().setTimeToNow();</pre></blockquote><p>. </p><h2><a name="clone"></a><img src="http://www.datejs.com/images/function.gif" /> clone<a href="APIDocumentation.html#clone" class="section_anchor"></a></h2><blockquote><h3><a name=".clone_(__)_:_Date"></a>.clone (  ) : <tt>Date</tt><a href="APIDocumentation.html#.clone_(__)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Returns a new Date object that is an exact date and time copy of the original instance. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    A new Date instance 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">// Wrong way
+var d1 = new Date(2007, 0, 1); // 1-Jan-2007
+var d2 = d1;
+d2.add(6).days(); 
+
+console.log(d1); // 7-Jan-2007
+console.log(d2); // 7-Jan-2007
+ 
+// Correct way
+var d1 = new Date(2007, 0, 1); // 1-Jan-2007
+var d2 = d1.clone();
+d2.add(6).days(); 
+
+console.log(d1); // 1-Jan-2007
+console.log(d2); // 7-Jan-2007</pre></blockquote><p>. </p><h2><a name="between"></a><img src="http://www.datejs.com/images/function.gif" /> between<a href="APIDocumentation.html#between" class="section_anchor"></a></h2><blockquote><h3><a name=".between_(_Date_startDate,_Date_endDate_)_:_Boolean"></a>.between ( <tt>Date</tt> startDate, <tt>Date</tt> endDate ) : <tt>Boolean</tt><a href="APIDocumentation.html#.between_(_Date_startDate,_Date_endDate_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Determines if this instance is between a range of two dates or equal to either the start or end dates. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Date</tt> startDate}     Start of range. <strong>required</strong> </li><li>{<tt>Date</tt> endDate}     End of range. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true is this is between or equal to the start and end dates, else false 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">var past = new Date(2000, 4, 5);
+var future = new Date(2010, 11, 25)
+Date.today().between(past, future); // true|false</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#compareTo">compareTo</a> </li><li><a href="APIDocumentation.html#equals">equals</a> </li><li><a href="APIDocumentation.html#isAfter">isAfter</a> </li><li><a href="APIDocumentation.html#isBefore">isBefore</a> </li></ul><p>  . </p><h2><a name="compareTo"></a><img src="http://www.datejs.com/images/function.gif" /> compareTo<a href="APIDocumentation.html#compareTo" class="section_anchor"></a></h2><blockquote><h3><a name=".compareTo_(_Date_date_)_:_Number"></a>.compareTo ( <tt>Date</tt> date ) : <tt>Number</tt><a href="APIDocumentation.html#.compareTo_(_Date_date_)_:_Number" class="section_anchor"></a></h3>
+</blockquote><blockquote>Compares this instance to a Date object and returns an number indication of their relative values. -1 = this is lessthan date. 0 = values are equal. 1 = this is greaterthan date. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Date</tt> date}     Date object to compare. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Number</tt>}  -1 = this is lessthan date. 0 = values are equal. 1 = this is greaterthan date. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">var past = Date.today().add(-6).days();
+var future = Date.today().add(6).days();
+
+Date.today().compareTo(future);                 // -1
+Date.today().compareTo(new Date().clearTime()); // 0
+Date.today().compareTo(past);                   // 1</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#between">between</a> </li><li><a href="APIDocumentation.html#equals">equals</a> </li><li><a href="APIDocumentation.html#isAfter">isAfter</a> </li><li><a href="APIDocumentation.html#isBefore">isBefore</a> </li></ul><p>. </p><h2><a name="equals"></a><img src="http://www.datejs.com/images/function.gif" /> equals<a href="APIDocumentation.html#equals" class="section_anchor"></a></h2><blockquote><h3><a name=".equals_(_Date_date_)_:_Boolean"></a>.equals ( <tt>Date</tt> date ) : <tt>Boolean</tt><a href="APIDocumentation.html#.equals_(_Date_date_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Compares this instance to another Date object and returns true if they are equal, otherwise false. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Date</tt> date}     Date object to compare. <strong>required</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if dates are equal. false if they are not equal. 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().compareTo(new Date().clearTime()); // true
+
+var d1 = Date.today();
+var d2 = Date.today().addHours(5);
+d1.equals(d2); // false</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#between">between</a> </li><li><a href="APIDocumentation.html#compareTo">compareTo</a> </li><li><a href="APIDocumentation.html#isAfter">isAfter</a> </li><li><a href="APIDocumentation.html#isBefore">isBefore</a> </li></ul><p>. </p><h2><a name="isAfter"></a><img src="http://www.datejs.com/images/function.gif" /> isAfter<a href="APIDocumentation.html#isAfter" class="section_anchor"></a></h2><blockquote><h3><a name=".isAfter_(_Date_date_)_:_Boolean"></a>.isAfter ( <tt>Date</tt> date ) : <tt>Boolean</tt><a href="APIDocumentation.html#.isAfter_(_Date_date_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Determines if this date occurs after the date to compare to. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Date</tt> date}     Date object to compare. If no date to compare, new Date() (&quot;now&quot;) is used. </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if this date instance is greater than the date to compare to (or &quot;now&quot;), otherwise false. 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">var tomorrow = new Date().add(1).day();	
+Date.today().isAfter(tomorrow); // false
+Date.today().isBefore(tomorrow); // true
+
+var yesterday = new Date().add(-1).day();
+Date.today().isAfter(yesterday); // true
+Date.today().isBefore(yesterday); // false
+
+// No date to compare to...	
+Date.today().isAfter(); // false
+Date.today().isBefore(); // true</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#between">compareTo</a> </li><li><a href="APIDocumentation.html#between">between</a> </li><li><a href="APIDocumentation.html#equals">equals</a> </li><li><a href="APIDocumentation.html#isBefore">isBefore</a> </li></ul><p>. </p><h2><a name="isBefore"></a><img src="http://www.datejs.com/images/function.gif" /> isBefore<a href="APIDocumentation.html#isBefore" class="section_anchor"></a></h2><blockquote><h3><a name=".isBefore_(_Date_date_)_:_Boolean"></a>.isBefore ( <tt>Date</tt> date ) : <tt>Boolean</tt><a href="APIDocumentation.html#.isBefore_(_Date_date_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Determines if this date occurs before the date to compare to. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Date</tt> date}     Date object to compare. If no date to compare, new Date() (&quot;now&quot;) is used. </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true if this date instance is greater than the date to compare to (or &quot;now&quot;), otherwise false. 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">var tomorrow = new Date().add(1).day();	
+Date.today().isAfter(tomorrow); // false
+Date.today().isBefore(tomorrow); // true
+
+var yesterday = new Date().add(-1).day();
+Date.today().isAfter(yesterday); // true
+Date.today().isBefore(yesterday); // false
+
+// No date to compare to...	
+Date.today().isAfter(); // false
+Date.today().isBefore(); // true</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#between">compareTo</a> </li><li><a href="APIDocumentation.html#between">between</a> </li><li><a href="APIDocumentation.html#equals">equals</a> </li><li><a href="APIDocumentation.html#isAfter">isAfter</a> </li></ul><p>. </p><h2><a name="getOrdinalNumber"></a><img src="http://www.datejs.com/images/function.gif" /> getOrdinalNumber<a href="APIDocumentation.html#getOrdinalNumber" class="section_anchor"></a></h2><blockquote><h3><a name=".getOrdinalNumber_(__)_:_Number"></a>.getOrdinalNumber (  ) : <tt>Number</tt><a href="APIDocumentation.html#.getOrdinalNumber_(__)_:_Number" class="section_anchor"></a></h3>
+</blockquote><blockquote>Get the Ordinal day (numeric day number) of the year, adjusted for leap year. Returns 1 through 365 (366 in leap years). 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Number</tt>} 1 through 365 (366 in leap years) 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().getDayOfYear();         // 323
+new Date(2000, 0, 1).getDayOfYear(); // 1</pre></blockquote><p>. </p><h2><a name="getTimezone"></a><img src="http://www.datejs.com/images/function.gif" /> getTimezone<a href="APIDocumentation.html#getTimezone" class="section_anchor"></a></h2><blockquote><h3><a name=".getTimezone_(__)_:_String"></a>.getTimezone (  ) : <tt>String</tt><a href="APIDocumentation.html#.getTimezone_(__)_:_String" class="section_anchor"></a></h3>
+</blockquote><blockquote>Get the timezone abbreviation of the current date. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>String</tt>} The abbreviated time zone name (e.g. &quot;EST&quot;) 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().getTimezone();</pre></blockquote><p>. </p><h2><a name="getUTCOffset"></a><img src="http://www.datejs.com/images/function.gif" /> getUTCOffset<a href="APIDocumentation.html#getUTCOffset" class="section_anchor"></a></h2><blockquote><h3><a name=".getUTCOffset_(__)_:_UTCOffset"></a>.getUTCOffset (  ) : UTCOffset<a href="APIDocumentation.html#.getUTCOffset_(__)_:_UTCOffset" class="section_anchor"></a></h3>
+</blockquote><blockquote>Get the offset from UTC of the current date. Returns the 4-character offset string prefixed with + or - (e.g. &quot;-0500&quot;). 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>String</tt>} The 4-character offset string prefixed with + or - (e.g. &quot;-0500&quot;) 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().getUTCOffset(); // &quot;-0600&quot;</pre></blockquote><p>. </p><h2><a name="getWeek"></a><img src="http://www.datejs.com/images/function.gif" /> getWeek<a href="APIDocumentation.html#getWeek" class="section_anchor"></a></h2><blockquote><h3><a name=".getWeek_(_)_:_Number"></a>.getWeek ( ) : <tt>Number</tt><a href="APIDocumentation.html#.getWeek_(_)_:_Number" class="section_anchor"></a></h3>
+</blockquote><blockquote>Get the week number. Week one (1) is the week which contains the first Thursday of the year. Monday is considered the first day of the week. 
+</blockquote><p>  <blockquote>The .getWeek() function does NOT convert the date to UTC. The local datetime is used. Please use .getISOWeek() to get the week of the UTC converted date. 
+</blockquote>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Number</tt>}  1 to 53 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().getWeek(); // 7</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#getISOWeek">getISOWeek</a> </li><li><a href="APIDocumentation.html#setWeek">setWeek</a> </li></ul><p>. </p><h2><a name="getISOWeek"></a><img src="http://www.datejs.com/images/function.gif" /> getISOWeek<a href="APIDocumentation.html#getISOWeek" class="section_anchor"></a></h2><blockquote><h3><a name=".getISOWeek_(_)_:_String"></a>.getISOWeek ( ) : <tt>String</tt><a href="APIDocumentation.html#.getISOWeek_(_)_:_String" class="section_anchor"></a></h3>
+</blockquote><blockquote>Get the ISO 8601 week number. Week one (&quot;01&quot;) is the week which contains the first Thursday of the year. Monday is considered the first day of the week. 
+</blockquote><blockquote>The .getISOWeek() function does convert the date to it&#x27;s UTC value. Please use .getWeek() to get the week of the local date. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>String</tt>}  &quot;01&quot; to &quot;53&quot; 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().getISOWeek(); // &quot;07&quot;</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#getWeek">getWeek</a> </li><li><a href="APIDocumentation.html#setWeek">setWeek</a> </li><li><a href="APIDocumentation.html#toISOString">toISOString</a> </li></ul><p>. </p><h2><a name="setWeek"></a><img src="http://www.datejs.com/images/function.gif" /> setWeek<a href="APIDocumentation.html#setWeek" class="section_anchor"></a></h2><blockquote><h3><a name=".setWeek_(_Number_week_)_:_Date"></a>.setWeek ( <tt>Number</tt> week ) : <tt>Date</tt><a href="APIDocumentation.html#.setWeek_(_Number_week_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><p>  <blockquote>Moves the date to Monday of the week set. Week one (1) is the week which contains the first Thursday of the year. 
+</blockquote>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><p>  <ul><li>{<tt>Number</tt> week}   A Number (1 to 53) that represents the week of the year. </li></ul>  <blockquote></p><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().setWeek(7); // Returns a Date set to the Monday of the week specified</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#getWeek">getWeek</a> </li><li><a href="APIDocumentation.html#getISOWeek">getISOWeek</a> </li></ul><p>. </p><h2><a name="getOrdinalNumber"></a><img src="http://www.datejs.com/images/function.gif" /> getOrdinalNumber<a href="APIDocumentation.html#getOrdinalNumber" class="section_anchor"></a></h2><blockquote><h3><a name=".getOrdinalNumber_(_)_:_Number"></a>.getOrdinalNumber ( ) : <tt>Number</tt><a href="APIDocumentation.html#.getOrdinalNumber_(_)_:_Number" class="section_anchor"></a></h3>
+</blockquote><blockquote>Get the Ordinal day (numeric day number) of the year, adjusted for leap year. Return a number 1 through 365 (366 in leap years). 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Number</tt>} 1 through 365 (366 in leap years) 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().getOrdinalNumber(); // 46</pre></blockquote><p>. </p><h2><a name="hasDaylightSavingTime"></a><img src="http://www.datejs.com/images/function.gif" /> hasDaylightSavingTime<a href="APIDocumentation.html#hasDaylightSavingTime" class="section_anchor"></a></h2><blockquote><h3><a name=".hasDaylightSavingTime_(_)_:_Boolean"></a>.hasDaylightSavingTime ( ) : <tt>Boolean</tt><a href="APIDocumentation.html#.hasDaylightSavingTime_(_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Indicates whether Daylight Saving Time is observed in the current time zone. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true|false 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().hasDaylightSavingTime(); // true|false</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#isDaylightSavingTime">isDaylightSavingTime</a> </li></ul><p>  . </p><h2><a name="isDaylightSavingTime"></a><img src="http://www.datejs.com/images/function.gif" /> isDaylightSavingTime<a href="APIDocumentation.html#isDaylightSavingTime" class="section_anchor"></a></h2><blockquote><h3><a name=".isDaylightSavingTime_(_)_:_Boolean"></a>.isDaylightSavingTime ( ) : <tt>Boolean</tt><a href="APIDocumentation.html#.isDaylightSavingTime_(_)_:_Boolean" class="section_anchor"></a></h3>
+</blockquote><blockquote>Indicates whether this Date instance is within the Daylight Saving Time range for the current time zone. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Boolean</tt>} true|false 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().isDaylightSavingTime(); // true|false</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#hasDaylightSavingTime">hasDaylightSavingTime</a> </li></ul><p>. </p><h2><a name="moveToDayOfWeek"></a><img src="http://www.datejs.com/images/function.gif" /> moveToDayOfWeek<a href="APIDocumentation.html#moveToDayOfWeek" class="section_anchor"></a></h2><blockquote><h3><a name=".moveToDayOfWeek_(_Number_dayOfWeek,_Number_direction_)_:_Date"></a>.moveToDayOfWeek ( <tt>Number</tt> dayOfWeek, <tt>Number</tt> direction ) : <tt>Date</tt><a href="APIDocumentation.html#.moveToDayOfWeek_(_Number_dayOfWeek,_Number_direction_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Move to the next or previous dayOfWeek. Whether to move into the future (+1) or past (-1) is controlled by the optional direction parameter. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> dayOfWeek}   The dayOfWeek to move to </li><li>{<tt>Number</tt> direction}   Forward (+1) or Back (-1). Defaults to +1. <strong>optional</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().moveToDayOfWeek(0);     // move to next Sunday
+Date.today().moveToDayOfWeek(0, -1); // move to last Sunday</pre></blockquote><p>. </p><h2><a name="moveToFirstDayOfMonth"></a><img src="http://www.datejs.com/images/function.gif" /> moveToFirstDayOfMonth<a href="APIDocumentation.html#moveToFirstDayOfMonth" class="section_anchor"></a></h2><blockquote><h3><a name=".moveToFirstDayOfMonth_(__)_:_Date"></a>.moveToFirstDayOfMonth (  ) : <tt>Date</tt><a href="APIDocumentation.html#.moveToFirstDayOfMonth_(__)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Moves the date to the first day of the month. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">new Date(2007, 10, 19).moveToFirstDayOfMonth(); // 1-Nov-2007</pre></blockquote><p>. </p><h2><a name="moveToLastDayOfMonth"></a><img src="http://www.datejs.com/images/function.gif" /> moveToLastDayOfMonth<a href="APIDocumentation.html#moveToLastDayOfMonth" class="section_anchor"></a></h2><blockquote><h3><a name=".moveToLastDayOfMonth_(__)_:_Date"></a>.moveToLastDayOfMonth (  ) : <tt>Date</tt><a href="APIDocumentation.html#.moveToLastDayOfMonth_(__)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Moves the date to the last day of the month. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">new Date(2007, 10, 19).moveToLastDayOfMonth(); // 30-Nov-2007</pre></blockquote><p>. </p><h2><a name="moveToMonth"></a><img src="http://www.datejs.com/images/function.gif" /> moveToMonth<a href="APIDocumentation.html#moveToMonth" class="section_anchor"></a></h2><blockquote><h3><a name=".moveToMonth_(_Number_month,_Number_direction_)_:_Date"></a>.moveToMonth ( <tt>Number</tt> month, <tt>Number</tt> direction ) : <tt>Date</tt><a href="APIDocumentation.html#.moveToMonth_(_Number_month,_Number_direction_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Move to the next or previous month. Whether to move into the future (+1) or past (-1) is controlled by the optional direction parameter. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> month}   The month to move to. 0 = January, 11 = December </li><li>{<tt>Number</tt> direction}   Forward (+1) or Back (-1). Defaults to +1. <strong>optional</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().moveToMonth(0);     // move to next January
+Date.today().moveToMonth(0, -1); // move to last January</pre></blockquote><p>. </p><h2><a name="moveToNthOccurrence"></a><img src="http://www.datejs.com/images/function.gif" /> moveToNthOccurrence<a href="APIDocumentation.html#moveToNthOccurrence" class="section_anchor"></a></h2><blockquote><h3><a name=".moveToNthOccurrence_(_Number_dayOfWeek,_Number_occurrence_)_:_D"></a>.moveToNthOccurrence ( <tt>Number</tt> dayOfWeek, <tt>Number</tt> occurrence ) : <tt>Date</tt><a href="APIDocumentation.html#.moveToNthOccurrence_(_Number_dayOfWeek,_Number_occurrence_)_:_D" class="section_anchor"></a></h3>
+</blockquote><blockquote>Moves the date to the next n&#x27;th occurrence of the dayOfWeek starting from the beginning of the month. The number (-1) is a magic number and will return the last occurrence of the dayOfWeek in the month. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> dayOfWeek}   The dayOfWeek to move to </li><li>{<tt>Number</tt> occurrence}   The n&#x27;th occurrence to move to. Use (-1) to return the last occurrence in the month </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().moveToNthOccurrence(0, 1);     // First Sunday of the month
+Date.today().moveToNthOccurrence(0, 3);     // Third Sunday of the month
+Date.today().moveToNthOccurrence(0, -1);    // Last Sunday of the month</pre></blockquote><p>. </p><h2><a name="set"></a><img src="http://www.datejs.com/images/function.gif" /> set<a href="APIDocumentation.html#set" class="section_anchor"></a></h2><blockquote><h3><a name=".set_(_Object_config_)_:_Date"></a>.set ( <tt>Object</tt> config ) : <tt>Date</tt><a href="APIDocumentation.html#.set_(_Object_config_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Set the value of year, month, day, hour, minute, second, millisecond of date instance using given configuration object. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Object</tt> config}   Configuration object containing attributes (month, day, etc.) </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().set({ day: 15, hour: 8 }); // Sets the day to the 15th day of the current month and the hour to 8 (AM).</pre></blockquote><blockquote>The following list all property options for .set(). 
+</blockquote><p>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">// returns Jul 15 2008 18:45:30
+Date.today().set({
+    millisecond: 500,
+    second: 30,
+    minute: 45,
+    hour: 18,
+    day: 15,
+    month: 6,
+    year: 2008
+    });
+ 
+// as one line
+Date.today().set({millisecond: 500, second: 30, minute: 45, hour: 18, day: 15, month: 6, year: 2008});
+
+// as separate config object
+var config = {millisecond: 500, second: 30, minute: 45, hour: 18, day: 15, month: 6, year: 2008};
+Date.today().set(config);</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#add">add</a> </li></ul><p>. </p><h2><a name="setTimezone"></a><img src="http://www.datejs.com/images/function.gif" /> setTimezone<a href="APIDocumentation.html#setTimezone" class="section_anchor"></a></h2><blockquote><h3><a name=".setTimezone_(_String_timezoneAbbreviation_)_:_Date"></a>.setTimezone ( <tt>String</tt> timezoneAbbreviation ) : <tt>Date</tt><a href="APIDocumentation.html#.setTimezone_(_String_timezoneAbbreviation_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Set the timezone for the current date using a <a href="http://code.google.com/p/datejs/wiki/CultureInfo">culture-specific</a> timezone abbreviation (&quot;PST&quot;). Note that in most JavaScript implementations, this will appear to change the time since the timezone is always based on the locale. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>String</tt> timezoneAbbreviation}   The timezone abbreviation. </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().setTimezone(&quot;PST&quot;);</pre></blockquote><p>. </p><h2><a name="setTimezoneOffset"></a><img src="http://www.datejs.com/images/function.gif" /> setTimezoneOffset<a href="APIDocumentation.html#setTimezoneOffset" class="section_anchor"></a></h2><blockquote><h3><a name=".setTimezoneOffset_(_Number_timezoneOffset_)_:_Date"></a>.setTimezoneOffset ( <tt>Number</tt> timezoneOffset ) : <tt>Date</tt><a href="APIDocumentation.html#.setTimezoneOffset_(_Number_timezoneOffset_)_:_Date" class="section_anchor"></a></h3>
+</blockquote><blockquote>Set the timezone for the current date using an offset (-0700). Note that in most JavaScript implementations, this will appear to change the time since the timezone is always based on the locale. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>Number</tt> timezoneOffset}   The timezone offset </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>Date</tt>}    this 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().setTimezoneOffset(-0700);</pre></blockquote><p>. </p><h2><a name="toISOString"></a><img src="http://www.datejs.com/images/function.gif" /> toISOString<a href="APIDocumentation.html#toISOString" class="section_anchor"></a></h2><blockquote><h3><a name=".toISOString_(_)_:_String"></a>.toISOString ( ) : <tt>String</tt><a href="APIDocumentation.html#.toISOString_(_)_:_String" class="section_anchor"></a></h3>
+</blockquote><blockquote>Converts the current date instance into a string with an ISO 8601 format. The date is converted to it&#x27;s UTC value. As per the ISO 8601 specification, the string will be wrapped with double quotation marks (&quot;). 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><blockquote>None 
+</blockquote><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>String</tt>}  ISO 8601 string of date 
+</blockquote><blockquote><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">new Date().toISOString();  // &quot;&quot;2008-04-13T10:07:15Z&quot;&quot;</pre></blockquote><p>  <blockquote>The local time version of ISO 8601 formatted string can be created by passing a custom format to the .toString() function. 
+</blockquote>  <blockquote></p><h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">new Date().toString(&quot;yyyy-MM-ddTHH:mm:ssZ&quot;);  // &quot;2008-04-13T04:11:05Z&quot;</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#toString">toString</a> </li></ul><p>  . </p><h2><a name="toString"></a><img src="http://www.datejs.com/images/function.gif" /> toString<a href="APIDocumentation.html#toString" class="section_anchor"></a></h2><blockquote><h3><a name=".toString_(_String_format_)_:_String"></a>.toString ( <tt>String</tt> format ) : <tt>String</tt><a href="APIDocumentation.html#.toString_(_String_format_)_:_String" class="section_anchor"></a></h3>
+</blockquote><blockquote>Converts the value of the current Date object to its equivalent string representation. Use format argument to specify format (optional). See <a href="http://code.google.com/p/datejs/wiki/FormatSpecifiers">FormatSpecifiers</a> for more info. 
+</blockquote><p>  <blockquote></p><h4><a name="Parameters"></a>Parameters<a href="APIDocumentation.html#Parameters" class="section_anchor"></a></h4>
+</blockquote><ul><li>{<tt>String</tt> format}   A format string consisting of one or more format spcifiers. <strong>optional</strong> </li></ul><blockquote><h4><a name="Return_Value"></a>Return Value<a href="APIDocumentation.html#Return_Value" class="section_anchor"></a></h4>
+</blockquote><blockquote>{<tt>String</tt>}  A string representation of the current Date object. 
+<h4><a name="Example"></a>Example<a href="APIDocumentation.html#Example" class="section_anchor"></a></h4>
+<pre class="prettyprint">Date.today().toString();           // native .toString() functionality
+Date.today().toString(&quot;M/d/yyyy&quot;); // 11/19/2007
+Date.today().toString(&quot;d-MMM-yyyy&quot;); // 19-Nov-2007
+new Date().toString(&quot;HH:mm&quot;);      // 18:45</pre></blockquote><blockquote><h4><a name="See_Also"></a>See Also<a href="APIDocumentation.html#See_Also" class="section_anchor"></a></h4>
+</blockquote><ul><li><a href="APIDocumentation.html#toISOString">toISOString</a> </li></ul>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/115280781704477179369/">basstrad...@googlemail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Nov 27 13:48:08 2007">Nov 27, 2007</span>
+ <div>
+<div class="commentcontent">
+<p>comprehensive, very nice </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113211213482088026188/">silou...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 19 08:23:54 2007">Dec 19, 2007</span>
+ <div>
+<div class="commentcontent">
+<p>This lib is very helpfull for me.Thanks for the work. </p><p>But I think there&#x27;s a mistake in the documentation of th method &quot;compareTo&quot; </p><p>In the version 1.1 alpha the method compareTo return the value </p><p>Date.today().compareTo(future);                   // -1 Date.today().compareTo(new Date().clearTime()); // 0 Date.today().compareTo(past);                 // 1 </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 19 12:14:29 2007">Dec 19, 2007</span>
+ <div>
+<div class="commentcontent">
+<p>@silouane - Thanks for pointing out the error in the documentation. I have updated the sample code. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113579283459481046817/">DeepakRa...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Dec 21 03:34:09 2007">Dec 21, 2007</span>
+ <div>
+<div class="commentcontent">
+<p>Why are the methods is(), final(), first() etc are not documented? I get a function not defined error when I use first(), final() in my code. They are not in the date.js file either. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Dec 21 04:03:42 2007">Dec 21, 2007</span>
+ <div>
+<div class="commentcontent">
+<p>@DeepakRaghav<a href="http://code.google.com/p/datejs/w/edit/DeepakRaghav">?</a> - The .is, .final and .first functions as well a several others were added after the Alpha-1 release. To get the latest files you have use SVN (<a href="../source/checkout.html" rel="nofollow">http://code.google.com/p/datejs/source</a>) or browse directly to the files you require (<a href="http://datejs.googlecode.com/svn/trunk/" rel="nofollow">http://datejs.googlecode.com/svn/trunk/</a>).  </p><p>The /build/ folder in SVN is always up to date with the latest code. </p><p>The documentation will be updated shortly. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 26 23:36:54 2007">Dec 26, 2007</span>
+ <div>
+<div class="commentcontent">
+<p>Hi all, if you find a bug in the code, please post the bug to the &quot;Issues&quot; tab (<a href="../issues/list.html" rel="nofollow">http://code.google.com/p/datejs/issues/list</a>). Or, you can discuss in the Datejs forums (<a href="http://www.datejs.com/forums/" rel="nofollow">http://www.datejs.com/forums/</a>). </p><p>Thanks for the help. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/110033981104093856267/">mpria...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 11 08:00:57 2008">Jan 11, 2008</span>
+ <div>
+<div class="commentcontent">
+<p><i>Set the value of year, month, day, hour, minute, second, millisecond of date instance using given configuration object.</i> </p><p>Can you give a <strong>full</strong> example of the configuration object that shows all possible properties? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 11 17:01:36 2008">Jan 11, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@mpriatel - I added a full code sample to both .set and .add.  </p><p>Basically they both accept all the date parts as parameters of the config object. </p><p>.set({day: 1, month: 1, year: 2008}) </p><p>.add({days: 5, months: 5, years: 5}) </p><p>Hope this helps.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/110033981104093856267/">mpria...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Jan 23 09:21:50 2008">Jan 23, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>perfect! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/107179771384152895556/">nickneck...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Mar  7 13:29:19 2008">Mar 7, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>You list Date.compare(Date ,Date) as a public static method, but this method doesn&#x27;t appear to be part of the download as of 3.7.K8. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Mar  7 13:45:56 2008">Mar 7, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@nickneckthepirate - The Date.compare function was added after the Alpha-1 release, but is included with the latest code in SVN (<a href="http://www.datejs.com/svn/" rel="nofollow">http://www.datejs.com/svn/</a>). </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/117076723809334311532/">chrishar...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Mar  9 18:34:34 2008">Mar 9, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>I couldn&#x27;t get getUTCOffset() to work in IE7 - I had to change the line  </p><p>from:  <tt>return r[0]+r.substr(2); </tt> to:  <tt>return r.charAt(0)+r.substr(2); </tt> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113054738010431400312/">david.hu...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 11 16:38:22 2008">Mar 11, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>This is great! FYI: there is a typo in the doc.  There are 2 addHours().  One should be addDays. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 11 16:51:52 2008">Mar 11, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@david.humpherys - Thanks for pointing out the typo. I have corrected the documentation. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/112180168690979686378/">smsh...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Apr  3 03:36:12 2008">Apr 3, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>is there a function to find the difference between 2 dates? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Apr  3 05:17:19 2008">Apr 3, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@smshuja - Within the /trunk/src/ folder (<a href="http://www.datejs.com/svn/" rel="nofollow">http://www.datejs.com/svn/</a>) is a file called time.js. The time.js file contains a class called TimeSpan<a href="http://code.google.com/p/datejs/w/edit/TimeSpan">?</a>?. The TimeSpan<a href="http://code.google.com/p/datejs/w/edit/TimeSpan">?</a>? object can be used to determine the difference between two dates (days, hours, minutes, seconds, milliseconds). </p><p>Example </p><p>var future = new Date().add({months: 5, days: 4, hours: 3, minutes: 2, seconds: 1}); var now = new Date(); </p><p>var span = new TimeSpan<a href="http://code.google.com/p/datejs/w/edit/TimeSpan">?</a>?(future - now); </p><p>console.log(&quot;Days:&quot;, span.getDays()); console.log(&quot;Hours:&quot;, span.getHours()); console.log(&quot;Minutes:&quot;, span.getMinutes()); console.log(&quot;Seconds:&quot;, span.getSeconds()); </p><p>Hope this helps. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/109880803493183518709/">mayank.r...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Apr  6 20:28:05 2008">Apr 6, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Here is a test file I created... </p><p>Valid js lines in the comments eg.  // Date.friday()  and so on give me a javascript errors.  </p><p>Are there more js files to include besides date.js? </p><p>Thanks. </p><p>Mayank </p><p>&lt;html&gt; &lt;head&gt; &lt;title&gt; Date JS Testing &lt;/title&gt; &lt;script type=text/javascript src=date.js&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;script&gt; // Get today.s date alert(Date.today()); </p><p>// Add 5 days to today alert(Date.today().add(5).days()); </p><p>// Get Friday of this week -- This does not work? Date.friday is not a function //alert(Date.friday()); </p><p>// Get March of this year -- Same for this. Does not work. //alert(Date.march()); </p><p>// Is today Friday? alert(Date.today().is().friday());  // true|false </p><p>// What day is it? alert(Date.today().getDayName()); </p><p>// Get the last Friday of the year alert(Date.dec().final().fri()); </p><p>&lt;/script&gt; </p><p>&lt;/body&gt; &lt;/html&gt; </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Apr  6 20:31:27 2008">Apr 6, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@mayank.r.jain - The Date.friday() functionality was added after the Alpha-1 release. The latest bits are only available directly from SVN (<a href="http://www.datejs.com/svn/" rel="nofollow">http://www.datejs.com/svn/</a>). </p><p>The latest date.js file can be download directly via the following link... </p><p><a href="http://datejs.googlecode.com/svn/trunk/build/date.js" rel="nofollow">http://datejs.googlecode.com/svn/trunk/build/date.js</a> </p><p>Hope this helps. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/107978790058662671027/">vincent....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Apr 18 02:31:28 2008">Apr 18, 2008</span>
+ <div>
+<div class="commentcontent">
+<p><strong>Documentation Error:</strong> </p><p>Date.getDayNumberFromName ( String dayName ) : Number (...) <blockquote>Parameters 
+</blockquote><ul><li>{String dayName} The name of the month (eg. &quot;February, &quot;Feb&quot;, &quot;october&quot;, &quot;oct&quot;).  </li></ul>(...) </p><p>Date.getMonthNumberFromName ( String monthName ) : Number (...) <blockquote>Parameters 
+</blockquote><ul><li>{String monthName} The name of the day (eg. &quot;Monday, &quot;Mon&quot;, &quot;tuesday&quot;, &quot;tue&quot;, &quot;We&quot;, &quot;we&quot;).  </li></ul></p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Apr 18 19:51:25 2008">Apr 18, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@vincent.chute - Thanks for pointing out the documentation error with getDayNumberFromName and getMonthNumberFromName. The error has been corrected.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/110033981104093856267/">mpria...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Apr 21 12:43:37 2008">Apr 21, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;ve added these two convenience methods: </p><p>Date.prototype.isAfter = function(d) { <blockquote>return this.compareTo(d) &gt; 0; 
+</blockquote>} Date.prototype.isBefore = function(d) { <blockquote>return this.compareTo(d) &lt; 0; 
+</blockquote>} </p><p>Not sure if I&#x27;ve re-invented the wheel here, but I find it easier to work with the syntax above, and it makes the code a little more readable.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Apr 21 23:28:56 2008">Apr 21, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@mpriatel - You know, I think I&#x27;ve added those two functions about 3 times to the library. I stare at them for while, trying to decide whether the usefulness is worth the added weight. Then I always delete. ... But, not this time. I&#x27;m adding those two into the library and I&#x27;m not thinking about it again. I certainly agree that they&#x27;re very useful and do clean up some otherwise awkward syntax. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/106574934372136995518/">Greg.Yac...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu May  8 22:08:50 2008">May 8, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Why does add() use fields in the plural (like &quot;hours&quot;, &quot;minutes&quot;, etc.) while set() uses fields in the singular (&quot;hour&quot;, &quot;minute&quot;, etc.). </p><p>I have a utility function that parses a date or time string into an object that is sometimes passed to set() and sometimes passed to add(). To work around this, I end up setting both singular and plural named fields. E.g. timeObj.hours = timeObj.hour = ....; </p><p>This is in the latest alpha (or is it beta?) code. I think that the previous release accepted both singular and plural field names. I can see how it might be problematic in the case where the object has both named fields with different values, but would it be possible to just decide on one naming convention? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri May  9 12:06:17 2008">May 9, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@Grreg.Yachuk - Can you post this question in the forums? That would be a better place to discuss and would encourage others to join in. We can link back to the forum post from here. thanks! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/106574934372136995518/">Greg.Yac...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri May  9 22:28:17 2008">May 9, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Done. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113503828043413529044/">wath1...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue May 13 22:20:12 2008">May 13, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Subj: Missing .getElapsed() method.  </p><p>It is in the docs above but missing from the code. For those like me that did not realise it you can simple do d1 - d2. </p><p>Thanks for the package, Gavin </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed May 14 12:53:20 2008">May 14, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@wath1000 - thanks for pointing out that .getElapsed was still in the docs. I removed .getElapsed from the library because all it did was d1-d2. The getElapsed documentation has been removed from this page.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">exedesi...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Sat Jul  5 07:31:46 2008">Jul 5, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>I am not a programmer at all, but can someone guide me on how to have a counter on a site to count down to a specific date (yyyy-mm-w-dd-hh-mm-ss) please. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/110928578011478007646/">Alain.Fa...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Jul 23 10:05:59 2008">Jul 23, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>I now just miss some <tt>.toShortLocaleString()</tt> that would take only the date part, not the time, to the browser&#x27;s locale format. </p><p>Instead of &quot;quarta-feira, 23 de julho de 2008 13:59:26&quot; (standard <tt>.toLocaleString()</tt> method) I would expect &quot;23/07/2008&quot; (here in Brazil) or &quot;07/23/2008&quot; (for the US). </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/103978885464446665866/">cesc.sa...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Aug 20 06:40:36 2008">Aug 20, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Spanish Date.parse(&quot;20 agosto 2008&quot;) do not give spected result, Date.parse(&quot;20-agosto-2008&quot;) does. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">dwb0...@yahoo.com</span>,
+ 
+ </span>
+ <span class="date" title="Thu Sep 18 09:13:39 2008">Sep 18, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>I had reached my point of frustration, and was about to start building my own date library to allow me to mimic the C# datetime syntax in JS, when I stumbled upon this. GREAT WORK! saved me hours upon hours of time. Thanks. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/114365882466136185853/">FlaviusV...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Sep 18 09:57:23 2008">Sep 18, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Where is the &quot;isBefore&quot; function?  I&#x27;ve search every file in the full download and it can&#x27;t find it. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Sep 18 10:07:03 2008">Sep 18, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>@FlaviusVictor<a href="http://code.google.com/p/datejs/w/edit/FlaviusVictor">?</a> - Please ensure you download the latest build from SVN (<a href="http://www.datejs.com/svn/" rel="nofollow">http://www.datejs.com/svn/</a>). The isBefore function was added recently, after the Alpha-1 release. Hope this helps. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/102993377038374039213/">arup.sof...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Dec  4 23:28:19 2008">Dec 4, 2008</span>
+ <div>
+<div class="commentcontent">
+<p>Very Nice... Great. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/103990310972905000603/">tonyhs...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Feb  5 16:27:31 2009">Feb 5, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>getWeek() doesn&#x27;t seem to work ... </p><p>Looked in date.js - getWeekOfYear() does seem to work. =) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/115889742065188866523/">nicholas...@googlemail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 10 11:09:25 2009">Mar 10, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Using en-GB and core.js from SVN </p><p>typeof(Date.parse(&quot;18/04/1981&quot;))     // number typeof(Date.today())                 // object </p><p>Date.today().isBefore()              // true Date.parse(&quot;18/04/1981&quot;).isBefore()  // isBefore is not a function </p><p>Date.today().isBefore(Date.parse(&#x27;18/04/1981&#x27;))  gives //TypeError<a href="http://code.google.com/p/datejs/w/edit/TypeError">?</a>(&quot;Tue Mar 10 2009 00:00:00 GMT+0000 (GMT Standard Time) - 391993200000&quot;)@:0 Firebug<a href="http://code.google.com/p/datejs/w/edit/via">?</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/108090127741023332043/">NFinst...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Mar 13 08:28:53 2009">Mar 13, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Great Stuff! feature suggestion: Date.parse(dateString,past|future) So if looking for a date in the past, and it is now Monday, &quot;Tuesday&quot; will mean last Tuesday, not tomorrow. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/110452010941144346715/">xphuon...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Mar 16 04:36:21 2009">Mar 16, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>how can to convert time.time() from python to javascript&#x27;s Date. Eg: t= time.time() #t= 1237203330.015857 I want to convert t to Date in javascript. Pls help me. Thanks </p><p>Phuong </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/111707754760803649988/">jed...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 31 12:40:22 2009">Mar 31, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@nicholas.associates.software same here, but with <strong>isAfter()</strong> </p><p>using <strong>date.js</strong> or <strong>date-pt-BR.js</strong> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/111707754760803649988/">jed...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 31 12:52:47 2009">Mar 31, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Using <strong>date-en-US.js</strong> from <strong>svn/trunk/build/</strong> now. </p><p>Seems to work... :) </p><p>Before I&#x27;ve tried the ones from <a href="http://www.datejs.com/download/" rel="nofollow">http://www.datejs.com/download/</a>. </p><p>Well, nice job btw! It&#x27;s a great time saver! :D </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/104460369579356847293/">juanef...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 21 10:10:14 2009">Apr 21, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Very nice lib, thanks. BTW toString and parseExact command examples are incorrect. .  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/116959395829055236757/">cyrus.da...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Apr 22 07:00:16 2009">Apr 22, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Gr8 lib! Thanks!!!! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/112839769018496751014/">wilson...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 25 14:55:45 2009">Jun 25, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Bug????????????????? Parse doesn&#x27;t work </p><p>var InitialDate<a href="http://code.google.com/p/datejs/w/edit/InitialDate">?</a>=Date.parse(&quot;01/07/2009&quot;, &quot;dd/MM/yyyy&quot;);  </p><p>when i alert(InitialDate<a href="http://code.google.com/p/datejs/w/edit/InitialDate">?</a>); </p><p>it shows me &quot;Wed Jan 07 2009 00:00:00 GMT+1300&quot; </p><p>it just uses &quot;MM/dd/yyyy&quot; format for me... </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/106844112625378910106/">ecoldw...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Jul 20 15:05:06 2009">Jul 20, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>There appears to be a problem displaying and parsing 12 o&#x27;clock. &quot;12pm&quot; cannot be parsed. &quot;12am&quot; is parsed as 12pm. Midnight is displayed as &quot;0:00:00 AM&quot; instead of &quot;12:00:00 AM&quot; </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/104067683239894589422/">wise...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Oct 25 01:08:40 2009">Oct 25, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Yes, I have reproduced ecoldwell&#x27;s problem </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/109118603417602325647/">fares.fa...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Oct 27 22:07:27 2009">Oct 27, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>am I doing a mistake here? I&#x27;m trying to set the date with something like : </p><p>var dateConfig = {minute:35, hour:13, day:24, month:10, year:2009}; dateConfigDate = Date.today().set(dateConfig); </p><p>but I&#x27;m keep getting the today&#x27;s day (the value of the day should be 24 as its explicitly set in the dateConfig JSON).. </p><p>anyone got the same problem? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/116375347642853575136/">manasag...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Nov 18 12:46:44 2009">Nov 18, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>I want to know whether all the functionality is in date.js or it is spread in core.js,timer.js and other js files. Please help. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/109954768799740176006/">anildbes...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec  9 03:35:05 2009">Dec 9, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, </p><p>Great work, very nice lib. </p><p>I have an issue though, i want to get last week from Sunday to Saturday. &#x27;1 week ago&#x27; always show last Wednesday if today is Wednesday but i want last week from Sunday to Saturday so if today is 12-09-2009 i want to get date 11-29-2009 or say first day of last week. </p><p>thanks. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/designbykamal/">designbykamal</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jan 14 10:05:04 2010">Jan 14, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>(6).months().ago().toString(&quot;yyyy-MM-dd&quot;) doesn&#x27;t properly span the new year.   </p><p>Use Date.parse(&#x27;-6months&#x27;).toString(&#x27;yyyy-MM-dd&#x27;)) instead. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/100319080531028483301/">riodepa...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Mar 10 22:04:29 2010">Mar 10, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>is the code for isBefore() finally found? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/100139752792487709797/">bunnyh...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Mar 14 14:07:43 2010">Mar 14, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>a table of contents or index at the top of this page would be very helpful :) thanks. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/104542531797213689648/">ipremra...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Mar 21 10:45:28 2010">Mar 21, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I would like to parse the date time like: if current date time is 12Mar,2010 08:02 PM and I give the date 12Mar,2010 08:00 PM then it should say - about 2 minutes ago ... same like twitter. Is it possible with DateJs<a href="http://code.google.com/p/datejs/w/edit/DateJs">?</a> I seen docs but haven&#x27;t found. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/106068864771951052851/">irm...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Mar 29 03:56:35 2010">Mar 29, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I couldn&#x27;t make compare method work. Do I missing something because it says &#x27;Date.compare is not a function&#x27; when I try to call that method.  </p><p>Thanks </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/107340034540277600956/">rosskarc...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Apr 10 09:29:29 2010">Apr 10, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>It&#x27;d be handy if there were a &quot;get&quot; complement to moveToNthOccurrence-- say, given a date, return something that indicates it&#x27;s the third thursday or whatever </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/110855629033374251502/">jnthnl...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu May  6 03:17:37 2010">May 6, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>This is really great! The only shortcoming I&#x27;ve found is that there is no function to create a Date object from an ISO string, even though there is a function to output one. </p><p>I found this - <a href="http://delete.me.uk/2005/03/iso8601.html" rel="nofollow">http://delete.me.uk/2005/03/iso8601.html</a> - which does the job. </p><p>Thanks, </p><p>J. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/110855629033374251502/">jnthnl...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat May  8 09:49:24 2010">May 8, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hello! </p><p>I think it would be good if the built version of datejs.js was updated from the version made in 2007 (<a href="../downloads/list.html" rel="nofollow">http://code.google.com/p/datejs/downloads/list</a>) to the one made in 2008 (updated 2008-05-13). The one from 2008 has some functions not in the earlier version, such as Date.compare. </p><p>J. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113185348573771437180/">grubbs...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jun  4 17:24:16 2010">Jun 4, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>It appears that the &quot;12pm&quot; issue still remains.  When you attempt to parse &quot;12pm&quot;, &quot;12 PM&quot;, or any variant of that it pretty much just dies.  Any fix for this in place or in the works?  // JC </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/fluoro@gmail.com/">fluoro@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Jun  6 23:11:06 2010">Jun 6, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>The timezone setting doesn&#x27;t seem to work.  Right now Date.today().toString() returns &quot;Mon Jun 07 2010 00:00:00 GMT-0500 (CDT)&quot; for me.  If I try to do Date.today().setTimezone (&quot;PST&quot;).toString() it gives me the same output.  Also trying to do setTimezoneOffset(-0500) causes strange results, the minutes appear to change in unpredictable ways rather than hours changing in predictable ways. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/fluoro@gmail.com/">fluoro@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Jun  6 23:27:56 2010">Jun 6, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Perhaps related to my previous comment, but Date.parse() seems to be giving the wrong results. </p><pre class="prettyprint">var s = &quot;2010/06/10 06:15:00 UTC&quot;;
+Date.parse(s); // &quot;Thu Jun 10 2010 06:15:00 GMT-0500 (CDT)&quot; (incorrect)
+new Date(s);   // &quot;Thu Jun 10 2010 01:15:00 GMT-0500 (CDT)&quot; (correct)</pre><p>Or am I doing something wrong? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/100972953026079753273/">zhaoheng...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jul 22 20:02:40 2010">Jul 22, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Date.compare  没有定义!!! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/111255567324421420058/">matshof...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Jul 27 02:32:21 2010">Jul 27, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>There is a little error at the parseExact documentation: </p><p>Date.parse(&quot;15-Oct-2004&quot;, &quot;M-ddd-yyyy&quot;);    // The Date of 15-Oct-2004 </p><p>Should be </p><p>Date.parse(&quot;15-Oct-2004&quot;, &quot;d-MMM-yyyy&quot;);    // The Date of 15-Oct-2004 </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/104095269804873388365/">justinvi...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Sep  7 20:08:48 2010">Sep 7, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>If you want to get/set timestamp you can do something like this.. </p><p>var myDate = Date.parse(&#x27;10:12pm 01/01/2010&#x27;);  </p><p>var timestamp = myDate.getTime(); </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/fluoro@gmail.com/">fluoro@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Sep 18 11:26:57 2010">Sep 18, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>There is a problem parsing dates without any kind of separators: </p><p>Date.parse(&#x27;20100913&#x27;, &#x27;yyyyMMdd&#x27;) <blockquote>=&gt; Fri Oct 20 913 00:00:00 GMT-0500 (CDT) 
+</blockquote></p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113931677457386632890/">geoff%co...@gtempaccount.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Sep 18 11:28:38 2010">Sep 18, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@fluoro - please use .parseExact </p><p>Date.parseExact(&#x27;20100913&#x27;, &#x27;yyyyMMdd&#x27;); </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/111260012493176379506/">dilis...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Oct 15 15:35:15 2010">Oct 15, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@ge...@coolite.com -- Thanks !! that worked ! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/paulrajj/">paulrajj</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Oct 30 05:25:01 2010">Oct 30, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hi,  <blockquote>How to calculate an age from given date. 
+</blockquote></p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/101197605021143765535/">j...@prosyn.org</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Oct 31 11:30:50 2010">Oct 31, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>The equals method seems to throw an exception no matter what arguments you pass. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/102689254613296655295/">darian.c...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Nov  9 17:37:33 2010">Nov 9, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;ve been trying to use .setTimeToNow() without success. I&#x27;ve looked through the source code and I think this function is missing? Can anyone confirm this please? </p><p>Is there an easy workaround to this issue?  Many thanks :-) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/102689254613296655295/">darian.c...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Nov  9 17:58:54 2010">Nov 9, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Related to my comment above: </p><p>The regular Datejs from the download page does not have the setTimeToNow() function. This is the header: </p><p>Version: 1.0 Alpha-1 Build Date: 13-Nov-2007 </p><p>However by checking out the Source tab I found there&#x27;s a newer version of the core.js that includes it (<a href="../source/browse/trunk/build/core.js.html" rel="nofollow">http://code.google.com/p/datejs/source/browse/trunk/build/core.js</a>). <strong>But this is missing parseExact()?!</strong> Here&#x27;s the header from that: </p><p>version: 1.0 Alpha-1 date: 2008-05-13 </p><p>This is very confusing. The API doesn&#x27;t match the download :-( </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">Galkin.I...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Thu Nov 11 08:00:16 2010">Nov 11, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, Once the parse is complete, is it possible to know what format was it in, so that I can convert another date object to string in the same style? Thanks! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/108070262517257940189/">shane.co...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 22 14:52:40 2010">Dec 22, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>var myDate = new Date( &quot;2010-07-12T10:30:00Z&quot; ); works in firefox NaN in IE8 Am I doing something wrong? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/102916204422469777108/">mark.far...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Mar  3 17:02:23 2011">Mar 3, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Where is setTimeToNow()? Was it removed from the core?? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/109637121117480836276/">njl_0...@163.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Apr  4 22:19:45 2011">Apr 4, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>where is the &#x27;datediff()&#x27; function ??? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/111678453383309986213/">steadm...@yahoo.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Apr  5 08:48:14 2011">Apr 5, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I am trying to determine whether a particular date (not today()) is between two other dates.  The documentation example uses: Date.today().between(past, future);   How can I modify the &quot;today()&quot; reference to be a date I want to compare past and future to? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/112801719890979599194/">GoodNat...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 26 08:12:31 2011">Apr 26, 2011</span>
+ <div>
+<div class="commentcontent">
+<p><tt>getOrdinalNumber</tt> should be renamed to <tt>getDayOfYear</tt> in the documentation to reflect the code. </p><p>also it appears <tt>getWeek</tt> has been renamed <tt>getWeekOfYear</tt> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/111433289180558770928/">claire.c...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Jun 13 05:57:13 2011">Jun 13, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Is there any way to get a number ordinal? ie 1st, 2nd, 3rd etc </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">rayno...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Wed Jun 15 04:41:21 2011">Jun 15, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>The method setTimezone simply add or subtract hours to date, or also calculate the daylight saving time respectly to the timezone? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">jlivermo...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Wed Jul 20 21:04:12 2011">Jul 20, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>This is a great library.  Thank you!  Thank you!  Thank you!   </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113889707489497477653/">jimbrow...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Jul 26 14:19:43 2011">Jul 26, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>There&#x27;s an error in the documentation for getTimezoneAbbreviation: Instead of: Date.getTimezoneAbbreviation(today.getTimezoneOffset, today.isDayLightSavingsTime()); Should be: Date.getTimezoneAbbreviation(today.getUTCOffset(), today.isDayLightSavingsTime()); </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/100334018932623690735/">cam.mars...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Aug 30 12:56:01 2011">Aug 30, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I feel like I&#x27;m missing something. .isDaylightSavingTime() doesn&#x27;t exist in date.js. I downloaded the entire package and the only reference to it is .isDST() in core-debug.js and it looks incomplete. Is there actually a .isDaylightSavingTime() somewhere? Am I missing something? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">snagb...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Thu Nov  3 16:16:08 2011">Nov 3, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Awesome library! Has helped me out immensely! Quick question though... Is it possible to get the dates that fall between 2 already established dates and place them into an array? </p><p>Thanks! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/112464489008371271098/">ned...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Nov 15 10:15:25 2011">Nov 15, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>This is an awesome library, I use it whenever I need to do stuff with dates.  </p><p>It would be great if something like John Resig&#x27;s Pretty Date (<a href="http://ejohn.org/blog/javascript-pretty-date" rel="nofollow">http://ejohn.org/blog/javascript-pretty-date</a>) or the slightly improved humaneDate.js (<a href="https://github.com/zachleat/Humane-Dates" rel="nofollow">https://github.com/zachleat/Humane-Dates</a>) were integrated into this, so you could things like  </p><blockquote>Date.today().next().thursday().toString(&#x27;humane&#x27;)  
+</blockquote><p>or maybe just    <blockquote>Date.today().humane() 
+</blockquote></p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/112464489008371271098/">ned...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Nov 15 10:20:49 2011">Nov 15, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>... to continue on that thought, Moment.js (<a href="http://momentjs.com/" rel="nofollow">http://momentjs.com/</a>) has a fromNow() method that does pretty dates: </p><p>moment().add(&#x27;days&#x27;, 7).fromNow() </p><p>though in other ways it is less elegant then date.js </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/111104073432163738540/">JornAndr...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Nov 29 01:37:09 2011">Nov 29, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>quote: &quot;Awesome library! Has helped me out immensely! Quick question though... Is it possible to get the dates that fall between 2 already established dates and place them into an array? </p><p>Thanks!&quot; </p><p>@snagb...@gmail.com  Have you found a library that can do that? I need it too :) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/105593123339226091862/">j...@johnmills.co.nz</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Dec 13 17:34:55 2011">Dec 13, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Great library! Definitely fills in the gaps of the default Date object. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/105425283098782934754/">eschop...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Jan  4 16:53:49 2012">Jan 4, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>How can I globally change the Date object by 5 hours so every Date object is offset? Thanks! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/111791366890910125580/">darko.ro...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Jan 22 23:09:09 2012">Jan 22, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, there&#x27;s no method .compare(date1, date2) in date.js maybe the documentation is old? </p><p>darko </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/109085279162340465997/">larosa.k...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Mar  4 15:56:05 2012">Mar 4, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I love you o_o </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/112565235180244841098/">dominiq...@dommedia.net</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 10 00:27:28 2012">Apr 10, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, I found &quot;addDays&quot; but where is &quot;substractDays&quot;?  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/111535699873349097649/">kieran.s...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Apr 30 01:24:31 2012">Apr 30, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>If you want to subtract days, use addDays but with a negative number. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/100734892429438301130/">lovevis...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed May 30 01:01:27 2012">May 30, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Really nice. </p><p>I have one doubt is there is any function is available to compare the array of date. Example :- am pass one array in that array some of the date is present. </p><p>Am need the output is sort the date and return the array. </p><p>Like that any function is available ? </p><p>Please help me on this. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/112435432128152685575/">shailes...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 14 02:25:01 2012">Jun 14, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi thanks so much for this library. I think there is a bug somewhere using the parse or parseExact method, try this: </p><pre class="prettyprint">alert(&quot;Jun 11 2012 12:52:48 PM using parseExact is: &quot; 
++ Date.parseExact(&quot;Jun 11 2012 12:52:48 PM&quot;, [&quot;MMM dd yyyy hh:mm:ss tt&quot;]).toString(&#x27;yyyy-MM-dd hh:mm:ss tt&#x27;)
++ &quot;\n&quot;
++ &quot;Jun 11 2012 12:52:48 PM using new Date() is: &quot; 
++ (new Date(&quot;Jun 11 2012 12:52:48 PM PM&quot;)).toString(&#x27;yyyy-MM-dd hh:mm:ss tt&#x27;));</pre><p>The first is incorrect, the second is correct.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/116818190463479852757/">Tobias.S...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Jun 26 04:42:03 2012">Jun 26, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>hi, </p><p>i got the following Code: </p><blockquote>function TimeSpan<a href="http://code.google.com/p/datejs/w/edit/TimeSpan">?</a>() { 
+<blockquote>var ArrivalStart<a href="http://code.google.com/p/datejs/w/edit/ArrivalStart">?</a> = $(&quot;#StartDatepicker<a href="http://code.google.com/p/datejs/w/edit/StartDatepicker">?</a>&quot;).val(); 
+var ArrivalEnd<a href="http://code.google.com/p/datejs/w/edit/ArrivalEnd">?</a> = $(&quot;#EndDatepicker<a href="http://code.google.com/p/datejs/w/edit/EndDatepicker">?</a>&quot;).val(); 
+</blockquote></blockquote><blockquote>var ArrivalStarttest<a href="http://code.google.com/p/datejs/w/edit/ArrivalStarttest">?</a> = Date.parseExact(ArrivalStart<a href="http://code.google.com/p/datejs/w/edit/ArrivalStart">?</a>, &quot;dd-MM-yyyy hh:mm&quot;); 
+var ArrivalEndtest<a href="http://code.google.com/p/datejs/w/edit/ArrivalEndtest">?</a> = Date.parseExact(ArrivalEnd<a href="http://code.google.com/p/datejs/w/edit/ArrivalEnd">?</a>, &quot;dd-MM-yyyy hh:mm&quot;); 
+var span = new TimePeriod<a href="http://code.google.com/p/datejs/w/edit/TimePeriod">?</a>(ArrivalEndtest<a href="http://code.google.com/p/datejs/w/edit/ArrivalEndtest">?</a> - ArrivalStarttest<a href="http://code.google.com/p/datejs/w/edit/ArrivalStarttest">?</a>); 
+alert(span); // Here i got object Object 
+alert(span.getMinutes()); // And here every time i got 0 
+</blockquote><blockquote>} 
+</blockquote><p>how can i get this to work </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/103283028558647340742/">FARAZFRA...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jun 28 05:14:02 2012">Jun 28, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>How to compare 2 time (start time and end time) Neew to compare: starttime must be always less then endtime </p><p>var sttm = &#x27;07:00 PM&#x27;; var edtm = &#x27;09:00 AM&#x27;; </p><p>how to compare using library &#x27;date.js&#x27; </p><p>Thanks, someone reply fast... </p><p>-Frank </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/109539671536350443225/">shounakg...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jul  5 18:59:50 2012">Jul 5, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>were these functions removed from the latest version? getDayName getMonthName isWeekday </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/116009176547859672939/">louiseze...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jul 26 06:49:40 2012">Jul 26, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Comment by cam.mars...@gmail.com, Aug 30, 2011 </p><p>I feel like I&#x27;m missing something. .isDaylightSavingTime() doesn&#x27;t exist in date.js. I downloaded the entire package and the only reference to it is .isDST() in core-debug.js and it looks incomplete. Is there actually a .isDaylightSavingTime() somewhere? Am I missing something? </p><p>I&#x27;m having the same problem - isDaylightSavingTime() doesn&#x27;t seem to exist.. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/116313240173538338100/">razvan.m...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Aug  8 08:04:30 2012">Aug 8, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>How can be initialized from unix time (seconds since 1970)? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/104757662627142491966/">robert.l...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Aug 20 07:19:30 2012">Aug 20, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Any chance you will be adding support for ....toString(&#x27;MMMM dS, yyyy&#x27;)? as in August 2nd, 2012 since the link from &quot;See <a href="http://code.google.com/p/datejs/wiki/FormatSpecifiers">FormatSpecifiers</a> for more info.&quot; seemed to indicate S would be S      The ordinal suffix (&quot;st, &quot;nd&quot;, &quot;rd&quot; or &quot;th&quot;) of the current day.            &quot;st, &quot;nd&quot;, &quot;rd&quot; or &quot;th&quot; But in practice I got August 2S, 2012  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/104757662627142491966/">robert.l...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Aug 20 09:38:16 2012">Aug 20, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>.toString(&#x27;h:mm tt&#x27;) returns 0:00 AM instead of 12:00 AM </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/101086309976003177010/">ruben...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Aug 21 13:38:54 2012">Aug 21, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>to  louiseze...@gmail.com ,  Get the latest version from SVN <a href="http://datejs.googlecode.com/svn/trunk/" rel="nofollow">http://datejs.googlecode.com/svn/trunk/</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/103917037650198272739/">bitmapve...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Aug 25 23:11:53 2012">Aug 25, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>How to get days on a month excluding Sunday(for example)? </p><p>I have try it trough a looping but i get stuck. any ideas? here is my code </p><pre class="prettyprint">var daysinmonth=Date.getDaysInMonth(2012,7);
+var sundays=0;
+
+for(i=1;i&lt;=daysinmonth;i++){
+	if(i.is().sunday()){
+		sundays++;
+	}
+}
+activedays = daysinmonth - sundays;
+console.log(activedays);
+</pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">vekec...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Mon Aug 27 05:40:14 2012">Aug 27, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>In response to ecoldwell&#x27;s problem:  </p><p>There appears to be a problem displaying and parsing 12 o&#x27;clock. &quot;12pm&quot; cannot be parsed. &quot;12am&quot; is parsed as 12pm. Midnight is displayed as &quot;0:00:00 AM&quot; instead of &quot;12:00:00 AM&quot; </p><p>Here&#x27;s a link to the solution: <a href="http://code.google.com/p/datejs/issues/detail?id=134" rel="nofollow">http://code.google.com/p/datejs/issues/detail?id=134</a> </p><p>Just follow the &#x27;fix&#x27; instructions in the &#x27;Please provide any additional information below.&#x27; section. It worked for me! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/113251600300124662643/">TimChau...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Oct  3 03:04:09 2012">Oct 3, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>This script &amp; documentation has nice ideas but is a mess... In the alpha version, the compare method is absent. In the release version, the parse method is absent. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/105545734645802139106/">anag...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Dec  9 20:20:23 2012">Dec 9, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>How can you disable all dates except those which you specific in an array? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">das....@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Thu Dec 20 12:34:19 2012">Dec 20, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Package is pretty broken.  Daylight savings features do not work (.hasDaylightSavingTime() and isDaylightSavingTime() are not functions).   </p><p>If I set timezone offset to zero (.setTimezoneOffset(0)) it does not display the correct UTC time like one would expect.   </p><p>Buyer beware...  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/117081117065888566136/">loboda.i...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 26 04:52:57 2012">Dec 26, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>setWeek weirdness </p><pre class="prettyprint">d = Date.today() 
+Wed Dec 26 2012 00:00:00 GMT+0000 (GMT Standard Time) 
+d.getWeek() 
+52 
+d.setWeek(52) 
+Mon Dec 23 2013 00:00:00 GMT+0000 (GMT Standard Time)</pre><p>And </p><pre class="prettyprint">d = Date.today() 
+Wed Dec 26 2012 00:00:00 GMT+0000 (GMT Standard Time) 
+d.setWeek(1) 
+Mon Dec 31 2012 00:00:00 GMT+0000 (GMT Standard Time)</pre><p>Anyone knows what this is about? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/109152374182491742837/">tas...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 11 02:40:37 2013">Jan 11, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Hello.I think new Date.parseExact(&quot;11/01/2013&quot;, &quot;d.M.yyyy&quot;); should return null but it returns a date object.Why is that?Thanks! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/115907285225621499219/">kounue...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 18 05:09:53 2013">Jan 18, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>This is fucking bullshit! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/114785495846175666843/">kfbl...@kfblake.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Feb 10 20:41:19 2013">Feb 10, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>For the record, this library has (at least for the US) the daylight savings offsets backwards. For example, the correct offsets for EST = GMT-0500, EDT=GMT-0400, this library has them switched. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">ak...@webconsultants.ru</span>,
+ 
+ </span>
+ <span class="date" title="Fri Feb 15 06:36:20 2013">Feb 15, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Please update wiki for this method </p><p><strong>validateDay</strong> </p><p><i>Return Value</i> <blockquote>{Boolean} true if within range, otherwise false. 
+</blockquote></p><p>If date is not valid we throw an exception </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="http://code.google.com/u/110501364689876552445/">schniede...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Feb 18 01:22:43 2013">Feb 18, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>How do I get UTC Time in a generic way? setTimezone(&quot;UTC&quot;); doesn&#x27;t work, setTimezoneOffset(-0100); gives strange results as well and is not generic! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code38ltmpl=phosting38continue=http://code.google.com/p/datejs/wiki/APIDocumentation38followup=http://code.google.com/p/datejs/wiki/APIDocumentation"
+ >Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="APIDocumentation" >
+ <input type="hidden" name="token" value="" >
+ </form>
+
+
+ <script src="http://www.gstatic.com/codesite/ph/9019872673698702027/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9019872673698702027/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9019872673698702027/js/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9019872673698702027/js/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="http://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="http://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
+

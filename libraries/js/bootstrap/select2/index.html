@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <title>Select2 3.3.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Select2 JQuery Plugin">
+    <meta name="author" content="Igor Vaynberg">
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="prettify/prettify.css" rel="stylesheet"/>
+      <style type="text/css">
+        .zebra { background-color: #efefef; }
+
+        img.flag { height: 10px; width: 15px; padding-right: 10px; }
+
+        .movie-result td {vertical-align: top }
+        .movie-image { width: 60px; }
+        .movie-image img { height: 80px; width: 60px;  }
+        .movie-info { padding-left: 10px; vertical-align: top; }
+        .movie-title { font-size: 1.2em; padding-bottom: 15px; }
+        .movie-synopsis { font-size: .8em; color: #888; }
+        .select2-highlighted .movie-synopsis { font-size: .8em; color: #eee; }
+        .bigdrop.select2-container .select2-results {max-height: 300px;}
+        .bigdrop .select2-results {max-height: 300px;}
+      </style>
+
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shim.js"></script>
+    <![endif]-->
+
+      <script src="js/json2.js"></script>
+      <script src="js/jquery-1.7.1.min.js"></script>
+      <script src="js/jquery-ui-1.8.20.custom.min.js"></script> <!-- for sortable example -->
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="prettify/prettify.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+      <script>
+          $(document).ready(function() {
+
+              function setupExampleCode(id) {
+                  var s = $("#script_"+id).html();
+                  s = s.replace(/</g, "&lt;");
+                  s = s.substr(s.indexOf("\n") + 1);
+                  s = s.substr(s.indexOf("\n") + 1);
+                  s = s.substr(0, s.lastIndexOf("\n"));
+                  s = s.substr(0, s.lastIndexOf("\n"));
+                  $("#code_"+id).html(s);
+              }
+
+              var i, e;
+              for (i = 2; ; i++) {
+                  e = $("#script_e" + i);
+                  if (e.length == 0) break;
+                  setupExampleCode("e" + i);
+              }
+
+              prettyPrint();
+          });
+      </script>
+
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-29683190-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+
+  </head>
+
+  <body>
+
+  <a href="https://github.com/ivaynberg/select2"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 2000" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+  <div class="navbar">
+      <div class="navbar-inner">
+          <div class="container">
+              <a class="brand" href=""></a>
+              <ul class="nav">
+                  
+                  
+                  
+
+  
+    
+      
+      	
+      	<li><a href="select2-latest.html">Select2 Latest</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="select-2.1.html">Select2 2.1</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class="active"><a href="index.html" class="active">Select2 3.3.1</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="select2-1.0.html">Select2 1.0</a></li>
+      	
+      
+    
+  
+
+
+
+              </ul>
+          </div>
+      </div>
+  </div>
+
+    <div class="container">
+
+      <div class="hero-unit">
+        <h1>Select2 3.3.1</h1>
+        <p>Select2 is a jQuery based replacement for select boxes.
+            It supports searching, remote data sets, and infinite scrolling of results.
+            Look and feel of Select2 is based on the excellent
+            <a href="http://harvesthq.github.com/chosen/">Chosen</a> library.</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="https://github.com/ivaynberg/select2">Learn more on GitHub&raquo;</a>
+                <a class="btn btn-success btn-large" href="https://github.com/ivaynberg/select2/tags">Download&raquo;</a>
+            </p>
+      </div>
+
+      <!--
+      <div class="row">
+          <div class="span12">
+              <div class="alert alert-block alert-error">
+                  <h4 class="alert-heading">Warning!</h4>
+                  This page refers to an unreleased version of Select2 which may be unstable. For the latest stable
+                  and previous versions please see links at the top. The code for this version is only available in the <a
+                      href="https://github.com/ivaynberg/select2">master branch.</a>
+              </div>
+          </div>
+      </div>
+      -->
+
+      <link href="select2-3.3.1/select2.css" rel="stylesheet"/>
+<script src="select2-3.3.1/select2.js"></script>
+
+<script id="script_e1">
+
+$(function() {
+   var opts=$("#source").html(), opts2="<option></option>"+opts;
+   $("select.populate").each(function() { var e=$(this); e.html(e.hasClass("placeholder")?opts2:opts); });
+   $(".examples article:odd").addClass("zebra");
+});
+
+$(document).ready(function() {
+    $("#e1").select2();
+});
+</script>
+
+<script id="script_e3">
+$(document).ready(function() {
+$("#e3").select2({
+    minimumInputLength: 2
+});
+});
+</script>
+
+<script id="script_e4">
+$(document).ready(function() {
+function format(state) {
+    if (!state.id) return state.text; // optgroup
+    return "<img class='flag' src='images/flags/" + state.id.toLowerCase() + ".png'/>" + state.text;
+}
+$("#e4").select2({
+    formatResult: format,
+    formatSelection: format,
+    escapeMarkup: function(m) { return m; }
+});
+});
+</script>
+
+
+<script id="script_e5">
+$(document).ready(function() {
+$("#e5").select2({
+    minimumInputLength: 1,
+    query: function (query) {
+        var data = {results: []}, i, j, s;
+        for (i = 1; i < 5; i++) {
+            s = "";
+            for (j = 0; j < i; j++) {s = s + query.term;}
+            data.results.push({id: query.term + i, text: s});
+        }
+        query.callback(data);
+    }
+});
+});
+</script>
+
+<script>
+
+    function movieFormatResult(movie) {
+        var markup = "<table class='movie-result'><tr>";
+        if (movie.posters !== undefined && movie.posters.thumbnail !== undefined) {
+            markup += "<td class='movie-image'><img src='" + movie.posters.thumbnail + "'/></td>";
+        }
+        markup += "<td class='movie-info'><div class='movie-title'>" + movie.title + "</div>";
+        if (movie.critics_consensus !== undefined) {
+            markup += "<div class='movie-synopsis'>" + movie.critics_consensus + "</div>";
+        }
+        else if (movie.synopsis !== undefined) {
+            markup += "<div class='movie-synopsis'>" + movie.synopsis + "</div>";
+        }
+        markup += "</td></tr></table>"
+        return markup;
+    }
+
+    function movieFormatSelection(movie) {
+        return movie.title;
+    }
+
+</script>
+
+<script id="script_e6">
+$(document).ready(function() {
+$("#e6").select2({
+    placeholder: "Search for a movie",
+    minimumInputLength: 1,
+    ajax: { // instead of writing the function to execute the request we use Select2's convenient helper
+        url: "http://api.rottentomatoes.com/api/public/v1.0/movies.json",
+        dataType: 'jsonp',
+        data: function (term, page) {
+            return {
+                q: term, // search term
+                page_limit: 10,
+                apikey: "ju6z9mjyajq2djue3gbvv26t" // please do not use so this example keeps working
+            };
+        },
+        results: function (data, page) { // parse the results into the format expected by Select2.
+            // since we are using custom formatting functions we do not need to alter remote JSON data
+            return {results: data.movies};
+        }
+    },
+    initSelection: function(element, callback) {
+        // the input tag has a value attribute preloaded that points to a preselected movie's id
+        // this function resolves that id attribute to an object that select2 can render
+        // using its formatResult renderer - that way the movie name is shown preselected
+        var id=$(element).val();
+        if (id!=="") {
+            $.ajax("http://api.rottentomatoes.com/api/public/v1.0/movies/"+id+".json", {
+                data: {
+                    apikey: "ju6z9mjyajq2djue3gbvv26t"
+                },
+                dataType: "jsonp"
+            }).done(function(data) { callback(data); });
+        }
+    },
+    formatResult: movieFormatResult, // omitted for brevity, see the source of this page
+    formatSelection: movieFormatSelection,  // omitted for brevity, see the source of this page
+    dropdownCssClass: "bigdrop", // apply css that makes the dropdown taller
+    escapeMarkup: function (m) { return m; } // we do not want to escape markup since we are displaying html in results
+});
+});
+</script>
+
+<script id="script_e7">
+$(document).ready(function() {
+$("#e7").select2({
+    placeholder: "Search for a movie",
+    minimumInputLength: 3,
+    ajax: {
+        url: "http://api.rottentomatoes.com/api/public/v1.0/movies.json",
+        dataType: 'jsonp',
+        quietMillis: 100,
+        data: function (term, page) { // page is the one-based page number tracked by Select2
+            return {
+                q: term, //search term
+                page_limit: 10, // page size
+                page: page, // page number
+                apikey: "ju6z9mjyajq2djue3gbvv26t" // please do not use so this example keeps working
+            };
+        },
+        results: function (data, page) {
+            var more = (page * 10) < data.total; // whether or not there are more results available
+
+            // notice we return the value of more so Select2 knows if more results can be loaded
+            return {results: data.movies, more: more};
+        }
+    },
+    formatResult: movieFormatResult, // omitted for brevity, see the source of this page
+    formatSelection: movieFormatSelection, // omitted for brevity, see the source of this page
+    dropdownCssClass: "bigdrop", // apply css that makes the dropdown taller
+    escapeMarkup: function (m) { return m; } // we do not want to escape markup since we are displaying html in results
+});
+});
+</script>
+
+<script id="script_e9">
+$(document).ready(function() {
+$("#e9").select2();
+});
+</script>
+
+<script id="script_e10">
+$(document).ready(function() {
+
+$("#e10").select2({
+    data:[{id:0,text:'enhancement'},{id:1,text:'bug'},{id:2,text:'duplicate'},{id:3,text:'invalid'},{id:4,text:'wontfix'}]
+});
+
+var data=[{id:0,tag:'enhancement'},{id:1,tag:'bug'},{id:2,tag:'duplicate'},{id:3,tag:'invalid'},{id:4,tag:'wontfix'}];
+function format(item) { return item.tag; };
+
+$("#e10_2").select2({
+    data:{ results: data, text: 'tag' },
+    formatSelection: format,
+    formatResult: format
+});
+
+$("#e10_3").select2({
+    data:{ results: data, text: function(item) { console.log('called with', item); return item.tag; } },
+    formatSelection: format,
+    formatResult: format
+});
+
+});
+</script>
+
+      <header class="jumbotron subhead">
+        <div class="subnav">
+          <ul class="nav nav-pills">
+              <li><a href="index.html#changelog">Changelog</a></li>
+              <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="index.html#">Examples <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="index.html#basics">Basics</a></li>
+                  <li><a href="index.html#multi">Multi-Value</a></li>
+                  <li><a href="index.html#placeholders">Placeholders</a></li>
+                  <li><a href="index.html#minimum">Minimum Input Length</a></li>
+                  <li><a href="index.html#templating">Templating</a></li>
+                  <li><a href="index.html#data">Loading Data</a></li>
+                  <li><a href="index.html#data_array">Array Data</a></li>
+                  <li><a href="index.html#ajax">Remote/AJAX Data</a></li>
+                  <li><a href="index.html#infinite">Infinite Scrolling of Remote/AJAX data</a></li>
+                  <li><a href="index.html#tags">Tagging Support</a></li>
+                  <li><a href="index.html#programmatic">Programmatic control</a></li>
+                  <li><a href="index.html#events">Events</a></li>
+                  <li><a href="index.html#event_ext_change">Events: Reacting to External Changes</a></li>
+                  <li><a href="index.html#disabled">Disabled Mode</a></li>
+                  <li><a href="index.html#matcher">Custom Matcher Function</a></li>
+                  <li><a href="index.html#sort_results">Sorting Displayed Results</a></li>
+                  <li><a href="index.html#responsive">Responsive Design</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#documentation">Documentation</a></li>
+            <li><a href="index.html#about">About</a></li>
+          </ul>
+        </div>
+      </header>
+
+
+        <section id="changelog">
+            <h2>Changelog</h2>
+            <div class="row"><div class="span12">
+                <ul>
+                    <li>Loading...</li>
+                    <script>
+                        $(function() {
+                            var url="https://api.github.com/repos/ivaynberg/select2/issues?state=closed&milestone=9";
+                            $.ajax({
+                                url: url,
+                                dataType: "jsonp"
+                            }).done(function(issues) {
+                                var list=$("#changelog ul");
+                                var template="<li><a href='$url'><span>#$num</span> </a>$title</li>";
+                                list.empty();
+                                $.each(issues.data, function() {
+                                    var markup=template
+                                        .replace(/\$url/g, this.html_url)
+                                        .replace(/\$num/g, this.number)
+                                        .replace(/\$title/g, this.title)
+                                    list.append(markup);
+                                });
+                            }).fail(function() {
+                                $("#changelog ul").empty().append("<li class='alert alert-error'>Error retrieving changelog</li>");
+                            });
+                        });
+                    </script>
+                </ul>
+            </div></div>
+        </section>
+
+        <section>
+            <h2>Browser Compatibility</h2>
+            <ul>
+                <li>IE 7+</li>
+                <li>Chrome 8+</li>
+                <li>Firefox 3.5+</li>
+                <li>Safari 3+</li>
+                <li>Opera 10.6+</li>
+            </ul>
+        </section>
+
+      <section class="examples">
+      <div class="row">
+          <div class="span12">
+              <h2>Examples</h2>
+              <hr/>
+          </div>
+      </div>
+
+
+      <article class="row" id="basics">
+        <div class="span4">
+          <h3>The Basics</h3>
+           <p>Select2 can take a regular select box like this:</p>
+           <p><select style="width:300px" id="source">
+               <optgroup label="Alaskan/Hawaiian Time Zone">
+                   <option value="AK">Alaska</option>
+                   <option value="HI">Hawaii</option>
+               </optgroup>
+               <optgroup label="Pacific Time Zone">
+                   <option value="CA">California</option>
+                   <option value="NV">Nevada</option>
+                   <option value="OR">Oregon</option>
+                   <option value="WA">Washington</option>
+               </optgroup>
+               <optgroup label="Mountain Time Zone">
+                   <option value="AZ">Arizona</option>
+                   <option value="CO">Colorado</option>
+                   <option value="ID">Idaho</option>
+                   <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                   <option value="NM">New Mexico</option>
+                   <option value="ND">North Dakota</option>
+                   <option value="UT">Utah</option>
+                   <option value="WY">Wyoming</option>
+               </optgroup>
+               <optgroup label="Central Time Zone">
+                   <option value="AL">Alabama</option>
+                   <option value="AR">Arkansas</option>
+                   <option value="IL">Illinois</option>
+                   <option value="IA">Iowa</option>
+                   <option value="KS">Kansas</option>
+                   <option value="KY">Kentucky</option>
+                   <option value="LA">Louisiana</option>
+                   <option value="MN">Minnesota</option>
+                   <option value="MS">Mississippi</option>
+                   <option value="MO">Missouri</option>
+                   <option value="OK">Oklahoma</option>
+                   <option value="SD">South Dakota</option>
+                   <option value="TX">Texas</option>
+                   <option value="TN">Tennessee</option>
+                   <option value="WI">Wisconsin</option>
+               </optgroup>
+               <optgroup label="Eastern Time Zone">
+                   <option value="CT">Connecticut</option>
+                   <option value="DE">Delaware</option>
+                   <option value="FL">Florida</option>
+                   <option value="GA">Georgia</option>
+                   <option value="IN">Indiana</option>
+                   <option value="ME">Maine</option>
+                   <option value="MD">Maryland</option>
+                   <option value="MA">Massachusetts</option>
+                   <option value="MI">Michigan</option>
+                   <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                   <option value="NY">New York</option>
+                   <option value="NC">North Carolina</option>
+                   <option value="OH">Ohio</option>
+                   <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option>
+                   <option value="VT">Vermont</option><option value="VA">Virginia</option>
+                   <option value="WV">West Virginia</option>
+               </optgroup>
+              </select>
+         </p>
+           <p>and turns it into:</p>
+           <p>
+               <select id="e1" class="populate" style="width:300px"></select>
+           </p>
+           <p>with support for quick option filtering via a search box</p>
+        </div>
+        <div class="span8">
+          <h3>Example Code</h3>
+<pre class="prettyprint linenums" id="code_e1">
+&lt;head&gt;
+    &lt;link href=&quot;select2.css&quot; rel=&quot;stylesheet&quot;/&gt;
+    &lt;script src=&quot;select2.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        $(document).ready(function() { $(&quot;#e1&quot;).select2(); });
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;select id=&quot;e1&quot;&gt;
+        &lt;option value=&quot;AL&quot;&gt;Alabama&lt;/option&gt;
+        ...
+        &lt;option value=&quot;WY&quot;&gt;Wyoming&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/body&gt;
+</pre>
+       </div>
+      </article>
+
+      <article class="row" id="multi">
+        <div class="span4">
+          <h3>Multi-Value Select Boxes</h3>
+           <p>Select2 also supports multi-value select boxes. The <code>select</code> below is declared with the <code>multiple</code> attribute. Select2 automatially picks up on this:</p>
+           <p>
+               <select multiple name="e9" id="e9" style="width:300px" class="populate"></select>
+           </p>
+        </div>
+        <div class="span8">
+          <h3>Example Code</h3>
+          <pre class="prettyprint linenums" id="code_e9">
+          </pre>
+       </div>
+      </article>
+
+
+        <article class="row" id="placeholders">
+          <script id="script_e2">
+            $(document).ready(function() {
+$("#e2").select2({
+    placeholder: "Select a State",
+    allowClear: true
+});
+$("#e2_2").select2({
+    placeholder: "Select a State"
+});
+            });
+          </script>
+          <div class="span4">
+            <h3>Placeholders</h3>
+             <p>A placeholder value can be defined and will be displayed until a selection is made:</p>
+             <p>
+                 <select id="e2" style="width:300px" class="populate placeholder"></select><br/>
+             </p>
+              <p>
+                  <select id="e2_2" multiple="multiple" style="width:300px" class="populate placeholder"></select><br/>
+              </p>
+             <p>The placeholder can be declared via a <code>data-placeholder</code> attribute attached to the <code>select</code>, or via the <code>placeholder</code> configuration element as seen in the example code</p>
+              <p>Optionally, a clear button (visible once a selection is made) is available to reset the select box back to the placeholder value.</p>
+
+          </div>
+          <div class="span8">
+            <h3>Example Code</h3>
+            <pre class="prettyprint linenums" id="code_e2">
+            </pre>
+         </div>
+        </article>
+
+        <article class="row" id="minimum">
+          <div class="span4">
+            <h3>Minimum Input</h3>
+             <p>Select2 supports a minimum input setting which is useful for large remote datasets where short search terms are not very useful:</p>
+             <p>
+                 <select id="e3" style="width:300px" class="populate"></select><br/>
+             </p>
+          </div>
+          <div class="span8">
+            <h3>Example Code</h3>
+            <pre class="prettyprint linenums" id="code_e3"></pre>
+         </div>
+        </article>
+
+        <article class="row" id="templating">
+          <div class="span4">
+            <h3>Templating</h3>
+             <p>Various display options of the Select2 component can be changed:</p>
+             <p>
+                 <select id="e4" style="width:300px" class="populate"></select><br/>
+             </p>
+          </div>
+          <div class="span8">
+            <h3>Example Code</h3>
+            <pre class="prettyprint linenums" id="code_e4"></pre>
+            <p>
+                You can set <code>data-</code> attributes to <code>&lt;option&gt;</code> (or &lt;optgroup&gt;) and use them inside temptlating functions:
+            </p>
+            <pre class="prettyprint linenums">
+&lt;select&gt;
+    &lt;option value="0" data-foo="bar"&gt;option one&lt;/option&gt;
+    ...
+&lt;/select&gt;
+            </pre>
+            <pre class="prettyprint linenums">
+function format(state) {
+    var originalOption = state.element;
+
+    return "&lt;img class='flag' src='images/flags/" + state.id.toLowerCase() + ".png' alt='" + $(originalOption).data('foo') + "' /&gt;" + state.text;
+}
+            </pre>
+         </div>
+        </article>
+
+       <article class="row" id="data">
+          <div class="span4">
+            <h3>Loading Data</h3>
+             <p>Select2 uses a function to load result data. Here is a trivial example that creates choices that consist of user's input repeated a number of times:</p>
+             <p>
+                 <input type="hidden" id="e5" style="width:300px"/>
+             </p>
+             <p>In order to take advantage of custom data loading Select2 should be attached to an <code>input type='hidden'</code> tag, otherwise data is parsed from <code>select</code>'s <code>option</code> tags.</code></p>
+          </div>
+          <div class="span8">
+            <h3>Example Code</h3>
+            <pre class="prettyprint linenums" id="code_e5">
+            </pre>
+         </div>
+        </article>
+
+
+<script id="script_e19">
+$(document).ready(function() {
+$("#e19").select2({ maximumSelectionSize: 3 });
+});
+</script>
+      <article class="row" id="maximumSelectionSize">
+          <div class="span4">
+              <h3>Maximum Selection Size</h3>
+              <p>Select2 allows the developer to limit the number of items that can be selected in a multi-select control.
+              In the example below only 3 or less items can be selected.</p>
+              <p>
+                  <select multiple class="populate" id="e19" style="width:300px"></select>
+              </p>
+          </div>
+          <div class="span8">
+              <h3>Example Code</h3>
+            <pre class="prettyprint linenums" id="code_e19">
+            </pre>
+          </div>
+      </article>
+
+      <article class="row" id="data_array">
+         <div class="span4">
+           <h3>Loading Array Data</h3>
+            <p>Select2 provides some shortcuts that make it easy to access local data stored in an array instead of having to write a <code>query</code> function mentioned in the example above.</p>
+            <p>Example below inlines the data by specifying an array in the <code>data</code> element. Items in such an array must have <code>id</code> and <code>text</code> keys.</p>
+            <p>
+                <input type="hidden" id="e10" style="width:300px"/>
+            </p>
+            <p>If your data does not have a <code>text</code> key, an alternative key can be specified as a string:</p>
+             <p>
+                 <input type="hidden" id="e10_2" style="width:300px"/>
+             </p>
+             <p>or as a function:</p>
+             <p>
+                 <input type="hidden" id="e10_3" style="width:300px"/>
+             </p>
+         </div>
+         <div class="span8">
+           <h3>Example Code</h3>
+           <pre class="prettyprint linenums" id="code_e10">
+           </pre>
+        </div>
+       </article>
+
+        <article class="row" id="ajax">
+           <div class="span12">
+             <h3>Loading Remote Data</h3>
+              <p>Select2 comes with AJAX/JSONP support built in. In this example we will search for a movie using Rotten Tomatoes API:</p>
+              <p>
+                  <input type="hidden" class="bigdrop" id="e6" style="width:600px" value="16340"/>
+              </p>
+               <p class="alert alert-warning">If this example does not work it is probably because the Rotten Tomatoes API key usage of 10000 requests per day has been exhausted. Please try again tomorrow.</p>
+               <h3>Example Code</h3>
+              <pre class="prettyprint linenums" id="code_e6"></pre>
+              <p>Select2 uses jQuery's <code>$.ajax</code> function to execute the remote call by default. An alternative <code>transport</code> function can be specified in the ajax settings, or an entirely custom implementation can be built by providing a custom <code>query</code> function instead of using the <code>ajax</code> helper</p>
+           </div>
+        </article>
+        <article class="row" id="infinite">
+            <div class="span12">
+              <h3>Infinite Scroll with Remote Data</h3>
+               <p>Select2 supports lazy-appending of results when the result list is scrolled to the end.
+                   In order to enable the remote service must support some sort of a paging mechanism and
+                   the query function given to Select2 must take advantage of it. The following example demonstrates
+                   how this can be set up. Search for some keyword and then scroll the result list to the end to
+                   see more results load:</p>
+               <p>
+                   <input type="hidden" class="bigdrop" id="e7" style="width:600px"/>
+               </p>
+                <p class="alert alert-warning">If this example does not work it is probably because the Rotten Tomatoes API key usage of 10000 requests per day has been exhausted. Please try again tomorrow.</p>
+                <h3>Example Code</h3>
+              <pre class="prettyprint linenums" id="code_e7"></pre>
+            </div>
+         </article>
+
+        <article class="row" id="programmatic">
+<script id="script_e8">
+$(document).ready(function() {
+$("#e8").select2();
+$("#e8_get").click(function () { alert("Selected value is: "+$("#e8").select2("val"));});
+$("#e8_set").click(function () { $("#e8").select2("val", "CA"); });
+$("#e8_cl").click(function() { $("#e8").select2("val", ""); });
+$("#e8_get2").click(function () { alert("Selected data is: "+JSON.stringify($("#e8").select2("data")));});
+$("#e8_set2").click(function () { $("#e8").select2("data", {id: "CA", text: "California"}); });
