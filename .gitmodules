@@ -1,0 +1,9 @@
+[submodule "libraries/django/django-social-auth"]
+	path = libraries/django/django-social-auth
+	url = git@github.com:omab/django-social-auth.git
+[submodule "libraries/django/django-api-playground"]
+	path = libraries/django/django-api-playground
+	url = git@github.com:Hipo/Django-API-Playground.git
+[submodule "libraries/django/django-debug-toolbar"]
+	path = libraries/django/django-debug-toolbar
+	url = git@github.com:django-debug-toolbar/django-debug-toolbar.git
