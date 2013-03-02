@@ -76,3 +76,6 @@
 [submodule "libraries/js/jquery-anystretch"]
 	path = libraries/js/jquery-anystretch
 	url = git@github.com:danmillar/jquery-anystretch.git
+[submodule "libraries/js/underscore"]
+	path = libraries/js/underscore
+	url = git@github.com:documentcloud/underscore.git
